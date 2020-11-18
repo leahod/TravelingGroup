@@ -1,0 +1,59 @@
+<ng4-loading-spinner> </ng4-loading-spinner>
+
+<div class="section">
+  <div class="line"></div>
+  <h2> <a (click)="openWithJoining()"> <i class="material-icons">{{arrowWith}}</i> </a> נסיעות עם הצטרפות </h2>
+  <div class="line"></div>
+  <div *ngFor="let t1 of travelingsAttached">
+    <mat-card *ngIf="openWith==1" class="row">
+      <div id="text" class="row">
+        <p class="row"> <span> מוצא : </span> {{t1.Source}} </p>
+        <p class="row"> <span> יעד : </span> {{t1.Destination}} </p>
+        <p class="row">
+          <span> מתאריך : </span>
+          {{t1.FromDate | date: 'dd/MM/yyyy'}}
+        </p>
+        <p class="row">
+          <span> עד תאריך : </span>
+          {{t1.ToDate | date: 'dd/MM/yyyy'}}
+        </p>
+        <p class="row"> <span> ימים בשבוע : </span>{{ getDays(t1.Weekday) }}</p>
+        <p class="row"> <span> מחיר :</span>₪ {{t1.Price}} </p>
+      </div>
+      <div class="icons">
+
+        <a (click)="deleteTravelingReg(t1.TravelingIdDriver)"><i id="delete" class="material-icons">
+            delete_foreve</i></a>
+        <i class="material-icons">airport_shuttle</i>
+      </div>
+    </mat-card>
+  </div>
+
+  <div id="line" class="line"></div>
+  <h2> <a (click)="openWithNotJoining()"> <i class="material-icons">{{arrowWithNot}}</i> </a> נסיעות ללא הצטרפות</h2>
+  <div class="line"></div>
+  <div *ngFor="let t2 of travelingsNotAttached">
+    <mat-card *ngIf="openWithNot==2" class="row">
+      <div id="text" class="row">
+        <p class="row"><span> מוצא : </span> {{t2.Source}} </p>
+        <p class="row"> <span> יעד : </span> {{t2.Destination}} </p>
+        <p class="row">
+          <span> מתאריך : </span>
+          {{t2.FromDate | date: 'dd/MM/yyyy'}}
+        </p>
+        <p class="row">
+          <span> עד תאריך : </span>
+          {{t2.ToDate | date: 'dd/MM/yyyy'}}
+        </p>
+        <p class="row"> <span> ימים בשבוע : </span>{{getDays(t2.Weekday)}}</p>
+        <p class="row"> <span> מחיר :</span>₪ {{t2.Price}} </p>
+      </div>
+      <div class="icons">
+        <a (click)="deleteTraveling(t2.TravelingIdDriver)"><i id="delete" class="material-icons">
+            delete_foreve</i></a>
+        <i class="material-icons">airport_shuttle</i>
+      </div>
+    </mat-card>
+  </div>
+  <div class="img"><img src="../../../assets/images/car.png" /></div>
+</div>

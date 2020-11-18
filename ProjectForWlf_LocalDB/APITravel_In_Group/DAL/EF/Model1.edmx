@@ -1,0 +1,915 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Travel_In_GroupDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Driver">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Identity" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="NumberOfSeats" Type="int" Nullable="false" />
+          <Property Name="CarDescription" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Passenger">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Identity" Type="nchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Payment">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdRegisteration" Type="int" Nullable="false" />
+          <Property Name="IdPaymentKind" Type="int" Nullable="false" />
+          <Property Name="PaymentDate" Type="datetime" Nullable="false" />
+          <Property Name="SumPay" Type="float" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PaymentKind">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Registeration">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TravelingIdDriver" Type="int" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="TravelingIdPassenger" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RegistrationDateRange">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="DateInRange" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="DateInRange" Type="datetime" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="NumPassengers" Type="int" Nullable="false" />
+          <Property Name="NumComplainants" Type="int" Nullable="false" />
+          <Property Name="IsComplain" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TravelDriverRange">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Date" />
+          </Key>
+          <Property Name="Identity" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="NumSeatsAvailable" Type="int" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TravelingDriver">
+          <Key>
+            <PropertyRef Name="TravelingIdDriver" />
+          </Key>
+          <Property Name="TravelingIdDriver" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DriverId" Type="int" Nullable="false" />
+          <Property Name="Weekday" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Places" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Time" Type="time" Precision="7" Nullable="false" />
+          <Property Name="FromDate" Type="date" Nullable="false" />
+          <Property Name="ToDate" Type="date" Nullable="false" />
+          <Property Name="Price" Type="float" Nullable="false" />
+          <Property Name="Source" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Destination" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="LatS" Type="float" Nullable="false" />
+          <Property Name="LngS" Type="float" Nullable="false" />
+          <Property Name="LatD" Type="float" Nullable="false" />
+          <Property Name="LngD" Type="float" Nullable="false" />
+          <Property Name="NumSeats" Type="int" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TravelingPassenger">
+          <Key>
+            <PropertyRef Name="TravelingIdPassenger" />
+          </Key>
+          <Property Name="TravelingIdPassenger" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PassengerId" Type="int" Nullable="false" />
+          <Property Name="Weekday" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Places" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="FromTime" Type="time" Precision="7" Nullable="false" />
+          <Property Name="FromDate" Type="date" Nullable="false" />
+          <Property Name="ToDate" Type="date" Nullable="false" />
+          <Property Name="Price" Type="float" Nullable="false" />
+          <Property Name="Source" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Destination" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="LatS" Type="float" Nullable="false" />
+          <Property Name="LngS" Type="float" Nullable="false" />
+          <Property Name="LatD" Type="float" Nullable="false" />
+          <Property Name="LngD" Type="float" Nullable="false" />
+          <Property Name="ToTime" Type="time" Precision="7" Nullable="false" />
+          <Property Name="IsEmbedded" Type="bit" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TravelPassengerRange">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Date" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TravelReporting">
+          <Key>
+            <PropertyRef Name="IdTravelingDriver" />
+            <PropertyRef Name="Date" />
+          </Key>
+          <Property Name="IdTravelingDriver" Type="int" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="NumPassengers" Type="int" Nullable="false" />
+          <Property Name="NumComplainants" Type="int" Nullable="false" />
+          <Property Name="IsPay" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Identity" />
+          </Key>
+          <Property Name="Identity" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Mail" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Cellphone" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Gender" Type="bit" Nullable="false" />
+          <Property Name="CreditCardNumber" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="Validity" Type="date" Nullable="false" />
+          <Property Name="Cvv" Type="nchar" MaxLength="3" Nullable="false" />
+          <Property Name="IdCardOwner" Type="nchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Driver__Identity__4EA8A765">
+          <End Role="User" Type="Self.User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Driver" Type="Self.Driver" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Identity" />
+            </Principal>
+            <Dependent Role="Driver">
+              <PropertyRef Name="Identity" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Passenger__Ident__4F9CCB9E">
+          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="Passenger" Type="Self.Passenger" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Identity" />
+            </Principal>
+            <Dependent Role="Passenger">
+              <PropertyRef Name="Identity" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Payment__IdPayme__6D6238AF">
+          <End Role="PaymentKind" Type="Self.PaymentKind" Multiplicity="1" />
+          <End Role="Payment" Type="Self.Payment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PaymentKind">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Payment">
+              <PropertyRef Name="IdPaymentKind" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Payment__IdRegis__6E565CE8">
+          <End Role="Registeration" Type="Self.Registeration" Multiplicity="1" />
+          <End Role="Payment" Type="Self.Payment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Registeration">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Payment">
+              <PropertyRef Name="IdRegisteration" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Registera__Trave__73DA2C14">
+          <End Role="TravelingPassenger" Type="Self.TravelingPassenger" Multiplicity="1" />
+          <End Role="Registeration" Type="Self.Registeration" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TravelingPassenger">
+              <PropertyRef Name="TravelingIdPassenger" />
+            </Principal>
+            <Dependent Role="Registeration">
+              <PropertyRef Name="TravelingIdPassenger" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Registera__Trave__7C6F7215">
+          <End Role="TravelingDriver" Type="Self.TravelingDriver" Multiplicity="1" />
+          <End Role="Registeration" Type="Self.Registeration" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TravelingDriver">
+              <PropertyRef Name="TravelingIdDriver" />
+            </Principal>
+            <Dependent Role="Registeration">
+              <PropertyRef Name="TravelingIdDriver" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Registration__Id__473C8FC7">
+          <End Role="Registeration" Type="Self.Registeration" Multiplicity="1" />
+          <End Role="RegistrationDateRange" Type="Self.RegistrationDateRange" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Registeration">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="RegistrationDateRange">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__TravelDriver__Id__190BB0C3">
+          <End Role="TravelingDriver" Type="Self.TravelingDriver" Multiplicity="1" />
+          <End Role="TravelDriverRange" Type="Self.TravelDriverRange" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TravelingDriver">
+              <PropertyRef Name="TravelingIdDriver" />
+            </Principal>
+            <Dependent Role="TravelDriverRange">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Traveling__Drive__7B7B4DDC">
+          <End Role="Driver" Type="Self.Driver" Multiplicity="1" />
+          <End Role="TravelingDriver" Type="Self.TravelingDriver" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Driver">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TravelingDriver">
+              <PropertyRef Name="DriverId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Traveling__Passe__74CE504D">
+          <End Role="Passenger" Type="Self.Passenger" Multiplicity="1" />
+          <End Role="TravelingPassenger" Type="Self.TravelingPassenger" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Passenger">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TravelingPassenger">
+              <PropertyRef Name="PassengerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__TravelPassen__Id__72E607DB">
+          <End Role="TravelingPassenger" Type="Self.TravelingPassenger" Multiplicity="1" />
+          <End Role="TravelPassengerRange" Type="Self.TravelPassengerRange" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TravelingPassenger">
+              <PropertyRef Name="TravelingIdPassenger" />
+            </Principal>
+            <Dependent Role="TravelPassengerRange">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__TravelRep__IdTra__7A8729A3">
+          <End Role="TravelingDriver" Type="Self.TravelingDriver" Multiplicity="1" />
+          <End Role="TravelReporting" Type="Self.TravelReporting" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TravelingDriver">
+              <PropertyRef Name="TravelingIdDriver" />
+            </Principal>
+            <Dependent Role="TravelReporting">
+              <PropertyRef Name="IdTravelingDriver" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Travel_In_GroupDBModelStoreContainer">
+          <EntitySet Name="Driver" EntityType="Self.Driver" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Passenger" EntityType="Self.Passenger" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Payment" EntityType="Self.Payment" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PaymentKind" EntityType="Self.PaymentKind" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Registeration" EntityType="Self.Registeration" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RegistrationDateRange" EntityType="Self.RegistrationDateRange" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TravelDriverRange" EntityType="Self.TravelDriverRange" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TravelingDriver" EntityType="Self.TravelingDriver" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TravelingPassenger" EntityType="Self.TravelingPassenger" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TravelPassengerRange" EntityType="Self.TravelPassengerRange" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TravelReporting" EntityType="Self.TravelReporting" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Driver__Identity__4EA8A765" Association="Self.FK__Driver__Identity__4EA8A765">
+            <End Role="User" EntitySet="User" />
+            <End Role="Driver" EntitySet="Driver" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Passenger__Ident__4F9CCB9E" Association="Self.FK__Passenger__Ident__4F9CCB9E">
+            <End Role="User" EntitySet="User" />
+            <End Role="Passenger" EntitySet="Passenger" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Payment__IdPayme__6D6238AF" Association="Self.FK__Payment__IdPayme__6D6238AF">
+            <End Role="PaymentKind" EntitySet="PaymentKind" />
+            <End Role="Payment" EntitySet="Payment" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Payment__IdRegis__6E565CE8" Association="Self.FK__Payment__IdRegis__6E565CE8">
+            <End Role="Registeration" EntitySet="Registeration" />
+            <End Role="Payment" EntitySet="Payment" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Registera__Trave__73DA2C14" Association="Self.FK__Registera__Trave__73DA2C14">
+            <End Role="TravelingPassenger" EntitySet="TravelingPassenger" />
+            <End Role="Registeration" EntitySet="Registeration" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Registera__Trave__7C6F7215" Association="Self.FK__Registera__Trave__7C6F7215">
+            <End Role="TravelingDriver" EntitySet="TravelingDriver" />
+            <End Role="Registeration" EntitySet="Registeration" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Registration__Id__473C8FC7" Association="Self.FK__Registration__Id__473C8FC7">
+            <End Role="Registeration" EntitySet="Registeration" />
+            <End Role="RegistrationDateRange" EntitySet="RegistrationDateRange" />
+          </AssociationSet>
+          <AssociationSet Name="FK__TravelDriver__Id__190BB0C3" Association="Self.FK__TravelDriver__Id__190BB0C3">
+            <End Role="TravelingDriver" EntitySet="TravelingDriver" />
+            <End Role="TravelDriverRange" EntitySet="TravelDriverRange" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Traveling__Drive__7B7B4DDC" Association="Self.FK__Traveling__Drive__7B7B4DDC">
+            <End Role="Driver" EntitySet="Driver" />
+            <End Role="TravelingDriver" EntitySet="TravelingDriver" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Traveling__Passe__74CE504D" Association="Self.FK__Traveling__Passe__74CE504D">
+            <End Role="Passenger" EntitySet="Passenger" />
+            <End Role="TravelingPassenger" EntitySet="TravelingPassenger" />
+          </AssociationSet>
+          <AssociationSet Name="FK__TravelPassen__Id__72E607DB" Association="Self.FK__TravelPassen__Id__72E607DB">
+            <End Role="TravelingPassenger" EntitySet="TravelingPassenger" />
+            <End Role="TravelPassengerRange" EntitySet="TravelPassengerRange" />
+          </AssociationSet>
+          <AssociationSet Name="FK__TravelRep__IdTra__7A8729A3" Association="Self.FK__TravelRep__IdTra__7A8729A3">
+            <End Role="TravelingDriver" EntitySet="TravelingDriver" />
+            <End Role="TravelReporting" EntitySet="TravelReporting" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Travel_In_GroupDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Travel_In_GroupDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Payments" EntityType="Travel_In_GroupDBModel.Payment" />
+          <EntitySet Name="PaymentKinds" EntityType="Travel_In_GroupDBModel.PaymentKind" />
+          <AssociationSet Name="FK__Payment__IdPayme__6D6238AF" Association="Travel_In_GroupDBModel.FK__Payment__IdPayme__6D6238AF">
+            <End Role="PaymentKind" EntitySet="PaymentKinds" />
+            <End Role="Payment" EntitySet="Payments" />
+          </AssociationSet>
+          <EntitySet Name="TravelReportings" EntityType="Travel_In_GroupDBModel.TravelReporting" />
+          <EntitySet Name="Registerations" EntityType="Travel_In_GroupDBModel.Registeration" />
+          <EntitySet Name="RegistrationDateRanges" EntityType="Travel_In_GroupDBModel.RegistrationDateRange" />
+          <AssociationSet Name="FK__Payment__IdRegis__6E565CE8" Association="Travel_In_GroupDBModel.FK__Payment__IdRegis__6E565CE8">
+            <End Role="Registeration" EntitySet="Registerations" />
+            <End Role="Payment" EntitySet="Payments" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Registration__Id__473C8FC7" Association="Travel_In_GroupDBModel.FK__Registration__Id__473C8FC7">
+            <End Role="Registeration" EntitySet="Registerations" />
+            <End Role="RegistrationDateRange" EntitySet="RegistrationDateRanges" />
+          </AssociationSet>
+          <EntitySet Name="TravelDriverRanges" EntityType="Travel_In_GroupDBModel.TravelDriverRange" />
+          <EntitySet Name="Drivers" EntityType="Travel_In_GroupDBModel.Driver" />
+          <EntitySet Name="Passengers" EntityType="Travel_In_GroupDBModel.Passenger" />
+          <EntitySet Name="TravelingDrivers" EntityType="Travel_In_GroupDBModel.TravelingDriver" />
+          <EntitySet Name="TravelingPassengers" EntityType="Travel_In_GroupDBModel.TravelingPassenger" />
+          <EntitySet Name="TravelPassengerRanges" EntityType="Travel_In_GroupDBModel.TravelPassengerRange" />
+          <EntitySet Name="Users" EntityType="Travel_In_GroupDBModel.User" />
+          <AssociationSet Name="FK__Driver__Identity__4EA8A765" Association="Travel_In_GroupDBModel.FK__Driver__Identity__4EA8A765">
+            <End Role="User" EntitySet="Users" />
+            <End Role="Driver" EntitySet="Drivers" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Traveling__Drive__7B7B4DDC" Association="Travel_In_GroupDBModel.FK__Traveling__Drive__7B7B4DDC">
+            <End Role="Driver" EntitySet="Drivers" />
+            <End Role="TravelingDriver" EntitySet="TravelingDrivers" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Passenger__Ident__4F9CCB9E" Association="Travel_In_GroupDBModel.FK__Passenger__Ident__4F9CCB9E">
+            <End Role="User" EntitySet="Users" />
+            <End Role="Passenger" EntitySet="Passengers" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Traveling__Passe__74CE504D" Association="Travel_In_GroupDBModel.FK__Traveling__Passe__74CE504D">
+            <End Role="Passenger" EntitySet="Passengers" />
+            <End Role="TravelingPassenger" EntitySet="TravelingPassengers" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Registera__Trave__73DA2C14" Association="Travel_In_GroupDBModel.FK__Registera__Trave__73DA2C14">
+            <End Role="TravelingPassenger" EntitySet="TravelingPassengers" />
+            <End Role="Registeration" EntitySet="Registerations" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Registera__Trave__7C6F7215" Association="Travel_In_GroupDBModel.FK__Registera__Trave__7C6F7215">
+            <End Role="TravelingDriver" EntitySet="TravelingDrivers" />
+            <End Role="Registeration" EntitySet="Registerations" />
+          </AssociationSet>
+          <AssociationSet Name="FK__TravelDriver__Id__190BB0C3" Association="Travel_In_GroupDBModel.FK__TravelDriver__Id__190BB0C3">
+            <End Role="TravelingDriver" EntitySet="TravelingDrivers" />
+            <End Role="TravelDriverRange" EntitySet="TravelDriverRanges" />
+          </AssociationSet>
+          <AssociationSet Name="FK__TravelRep__IdTra__7A8729A3" Association="Travel_In_GroupDBModel.FK__TravelRep__IdTra__7A8729A3">
+            <End Role="TravelingDriver" EntitySet="TravelingDrivers" />
+            <End Role="TravelReporting" EntitySet="TravelReportings" />
+          </AssociationSet>
+          <AssociationSet Name="FK__TravelPassen__Id__72E607DB" Association="Travel_In_GroupDBModel.FK__TravelPassen__Id__72E607DB">
+            <End Role="TravelingPassenger" EntitySet="TravelingPassengers" />
+            <End Role="TravelPassengerRange" EntitySet="TravelPassengerRanges" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="Payment">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdRegisteration" Type="Int32" Nullable="false" />
+          <Property Name="IdPaymentKind" Type="Int32" Nullable="false" />
+          <Property Name="PaymentDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="SumPay" Type="Double" Nullable="false" />
+          <NavigationProperty Name="PaymentKind" Relationship="Travel_In_GroupDBModel.FK__Payment__IdPayme__6D6238AF" FromRole="Payment" ToRole="PaymentKind" />
+          <NavigationProperty Name="Registeration" Relationship="Travel_In_GroupDBModel.FK__Payment__IdRegis__6E565CE8" FromRole="Payment" ToRole="Registeration" />
+        </EntityType>
+        <EntityType Name="PaymentKind">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Payments" Relationship="Travel_In_GroupDBModel.FK__Payment__IdPayme__6D6238AF" FromRole="PaymentKind" ToRole="Payment" />
+        </EntityType>
+        <Association Name="FK__Payment__IdPayme__6D6238AF">
+          <End Type="Travel_In_GroupDBModel.PaymentKind" Role="PaymentKind" Multiplicity="1" />
+          <End Type="Travel_In_GroupDBModel.Payment" Role="Payment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PaymentKind">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Payment">
+              <PropertyRef Name="IdPaymentKind" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="TravelReporting">
+          <Key>
+            <PropertyRef Name="IdTravelingDriver" />
+            <PropertyRef Name="Date" />
+          </Key>
+          <Property Name="IdTravelingDriver" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="NumPassengers" Type="Int32" Nullable="false" />
+          <Property Name="NumComplainants" Type="Int32" Nullable="false" />
+          <Property Name="IsPay" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="TravelingDriver" Relationship="Travel_In_GroupDBModel.FK__TravelRep__IdTra__7A8729A3" FromRole="TravelReporting" ToRole="TravelingDriver" />
+        </EntityType>
+        <EntityType Name="Registeration">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TravelingIdDriver" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="TravelingIdPassenger" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Payments" Relationship="Travel_In_GroupDBModel.FK__Payment__IdRegis__6E565CE8" FromRole="Registeration" ToRole="Payment" />
+          <NavigationProperty Name="RegistrationDateRanges" Relationship="Travel_In_GroupDBModel.FK__Registration__Id__473C8FC7" FromRole="Registeration" ToRole="RegistrationDateRange" />
+          <NavigationProperty Name="TravelingPassenger" Relationship="Travel_In_GroupDBModel.FK__Registera__Trave__73DA2C14" FromRole="Registeration" ToRole="TravelingPassenger" />
+          <NavigationProperty Name="TravelingDriver" Relationship="Travel_In_GroupDBModel.FK__Registera__Trave__7C6F7215" FromRole="Registeration" ToRole="TravelingDriver" />
+        </EntityType>
+        <EntityType Name="RegistrationDateRange">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="DateInRange" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="DateInRange" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <Property Name="NumPassengers" Type="Int32" Nullable="false" />
+          <Property Name="NumComplainants" Type="Int32" Nullable="false" />
+          <Property Name="IsComplain" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Registeration" Relationship="Travel_In_GroupDBModel.FK__Registration__Id__473C8FC7" FromRole="RegistrationDateRange" ToRole="Registeration" />
+        </EntityType>
+        <Association Name="FK__Payment__IdRegis__6E565CE8">
+          <End Type="Travel_In_GroupDBModel.Registeration" Role="Registeration" Multiplicity="1" />
+          <End Type="Travel_In_GroupDBModel.Payment" Role="Payment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Registeration">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Payment">
+              <PropertyRef Name="IdRegisteration" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Registration__Id__473C8FC7">
+          <End Type="Travel_In_GroupDBModel.Registeration" Role="Registeration" Multiplicity="1" />
+          <End Type="Travel_In_GroupDBModel.RegistrationDateRange" Role="RegistrationDateRange" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Registeration">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="RegistrationDateRange">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="TravelDriverRange">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Date" />
+          </Key>
+          <Property Name="Identity" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="NumSeatsAvailable" Type="Int32" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="TravelingDriver" Relationship="Travel_In_GroupDBModel.FK__TravelDriver__Id__190BB0C3" FromRole="TravelDriverRange" ToRole="TravelingDriver" />
+        </EntityType>
+        <EntityType Name="Driver">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Identity" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="NumberOfSeats" Type="Int32" Nullable="false" />
+          <Property Name="CarDescription" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="User" Relationship="Travel_In_GroupDBModel.FK__Driver__Identity__4EA8A765" FromRole="Driver" ToRole="User" />
+          <NavigationProperty Name="TravelingDrivers" Relationship="Travel_In_GroupDBModel.FK__Traveling__Drive__7B7B4DDC" FromRole="Driver" ToRole="TravelingDriver" />
+        </EntityType>
+        <EntityType Name="Passenger">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Identity" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="User" Relationship="Travel_In_GroupDBModel.FK__Passenger__Ident__4F9CCB9E" FromRole="Passenger" ToRole="User" />
+          <NavigationProperty Name="TravelingPassengers" Relationship="Travel_In_GroupDBModel.FK__Traveling__Passe__74CE504D" FromRole="Passenger" ToRole="TravelingPassenger" />
+        </EntityType>
+        <EntityType Name="TravelingDriver">
+          <Key>
+            <PropertyRef Name="TravelingIdDriver" />
+          </Key>
+          <Property Name="TravelingIdDriver" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DriverId" Type="Int32" Nullable="false" />
+          <Property Name="Weekday" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Places" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Time" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="FromDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="ToDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Price" Type="Double" Nullable="false" />
+          <Property Name="Source" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Destination" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LatS" Type="Double" Nullable="false" />
+          <Property Name="LngS" Type="Double" Nullable="false" />
+          <Property Name="LatD" Type="Double" Nullable="false" />
+          <Property Name="LngD" Type="Double" Nullable="false" />
+          <Property Name="NumSeats" Type="Int32" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Driver" Relationship="Travel_In_GroupDBModel.FK__Traveling__Drive__7B7B4DDC" FromRole="TravelingDriver" ToRole="Driver" />
+          <NavigationProperty Name="Registerations" Relationship="Travel_In_GroupDBModel.FK__Registera__Trave__7C6F7215" FromRole="TravelingDriver" ToRole="Registeration" />
+          <NavigationProperty Name="TravelDriverRanges" Relationship="Travel_In_GroupDBModel.FK__TravelDriver__Id__190BB0C3" FromRole="TravelingDriver" ToRole="TravelDriverRange" />
+          <NavigationProperty Name="TravelReportings" Relationship="Travel_In_GroupDBModel.FK__TravelRep__IdTra__7A8729A3" FromRole="TravelingDriver" ToRole="TravelReporting" />
+        </EntityType>
+        <EntityType Name="TravelingPassenger">
+          <Key>
+            <PropertyRef Name="TravelingIdPassenger" />
+          </Key>
+          <Property Name="TravelingIdPassenger" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PassengerId" Type="Int32" Nullable="false" />
+          <Property Name="Weekday" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Places" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FromTime" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="FromDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="ToDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Price" Type="Double" Nullable="false" />
+          <Property Name="Source" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Destination" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LatS" Type="Double" Nullable="false" />
+          <Property Name="LngS" Type="Double" Nullable="false" />
+          <Property Name="LatD" Type="Double" Nullable="false" />
+          <Property Name="LngD" Type="Double" Nullable="false" />
+          <Property Name="ToTime" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="IsEmbedded" Type="Boolean" Nullable="false" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Passenger" Relationship="Travel_In_GroupDBModel.FK__Traveling__Passe__74CE504D" FromRole="TravelingPassenger" ToRole="Passenger" />
+          <NavigationProperty Name="Registerations" Relationship="Travel_In_GroupDBModel.FK__Registera__Trave__73DA2C14" FromRole="TravelingPassenger" ToRole="Registeration" />
+          <NavigationProperty Name="TravelPassengerRanges" Relationship="Travel_In_GroupDBModel.FK__TravelPassen__Id__72E607DB" FromRole="TravelingPassenger" ToRole="TravelPassengerRange" />
+        </EntityType>
+        <EntityType Name="TravelPassengerRange">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Date" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="TravelingPassenger" Relationship="Travel_In_GroupDBModel.FK__TravelPassen__Id__72E607DB" FromRole="TravelPassengerRange" ToRole="TravelingPassenger" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Identity" />
+          </Key>
+          <Property Name="Identity" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Mail" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Cellphone" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Gender" Type="Boolean" Nullable="false" />
+          <Property Name="CreditCardNumber" Type="String" Nullable="false" MaxLength="16" FixedLength="false" Unicode="true" />
+          <Property Name="Validity" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Cvv" Type="String" Nullable="false" MaxLength="3" FixedLength="true" Unicode="true" />
+          <Property Name="IdCardOwner" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="Drivers" Relationship="Travel_In_GroupDBModel.FK__Driver__Identity__4EA8A765" FromRole="User" ToRole="Driver" />
+          <NavigationProperty Name="Passengers" Relationship="Travel_In_GroupDBModel.FK__Passenger__Ident__4F9CCB9E" FromRole="User" ToRole="Passenger" />
+        </EntityType>
+        <Association Name="FK__Driver__Identity__4EA8A765">
+          <End Type="Travel_In_GroupDBModel.User" Role="User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Travel_In_GroupDBModel.Driver" Role="Driver" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Identity" />
+            </Principal>
+            <Dependent Role="Driver">
+              <PropertyRef Name="Identity" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Traveling__Drive__7B7B4DDC">
+          <End Type="Travel_In_GroupDBModel.Driver" Role="Driver" Multiplicity="1" />
+          <End Type="Travel_In_GroupDBModel.TravelingDriver" Role="TravelingDriver" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Driver">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TravelingDriver">
+              <PropertyRef Name="DriverId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Passenger__Ident__4F9CCB9E">
+          <End Type="Travel_In_GroupDBModel.User" Role="User" Multiplicity="1" />
+          <End Type="Travel_In_GroupDBModel.Passenger" Role="Passenger" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Identity" />
+            </Principal>
+            <Dependent Role="Passenger">
+              <PropertyRef Name="Identity" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Traveling__Passe__74CE504D">
+          <End Type="Travel_In_GroupDBModel.Passenger" Role="Passenger" Multiplicity="1" />
+          <End Type="Travel_In_GroupDBModel.TravelingPassenger" Role="TravelingPassenger" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Passenger">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TravelingPassenger">
+              <PropertyRef Name="PassengerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Registera__Trave__73DA2C14">
+          <End Type="Travel_In_GroupDBModel.TravelingPassenger" Role="TravelingPassenger" Multiplicity="1" />
+          <End Type="Travel_In_GroupDBModel.Registeration" Role="Registeration" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TravelingPassenger">
+              <PropertyRef Name="TravelingIdPassenger" />
+            </Principal>
+            <Dependent Role="Registeration">
+              <PropertyRef Name="TravelingIdPassenger" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Registera__Trave__7C6F7215">
+          <End Type="Travel_In_GroupDBModel.TravelingDriver" Role="TravelingDriver" Multiplicity="1" />
+          <End Type="Travel_In_GroupDBModel.Registeration" Role="Registeration" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TravelingDriver">
+              <PropertyRef Name="TravelingIdDriver" />
+            </Principal>
+            <Dependent Role="Registeration">
+              <PropertyRef Name="TravelingIdDriver" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__TravelDriver__Id__190BB0C3">
+          <End Type="Travel_In_GroupDBModel.TravelingDriver" Role="TravelingDriver" Multiplicity="1" />
+          <End Type="Travel_In_GroupDBModel.TravelDriverRange" Role="TravelDriverRange" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TravelingDriver">
+              <PropertyRef Name="TravelingIdDriver" />
+            </Principal>
+            <Dependent Role="TravelDriverRange">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__TravelRep__IdTra__7A8729A3">
+          <End Type="Travel_In_GroupDBModel.TravelingDriver" Role="TravelingDriver" Multiplicity="1" />
+          <End Type="Travel_In_GroupDBModel.TravelReporting" Role="TravelReporting" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TravelingDriver">
+              <PropertyRef Name="TravelingIdDriver" />
+            </Principal>
+            <Dependent Role="TravelReporting">
+              <PropertyRef Name="IdTravelingDriver" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__TravelPassen__Id__72E607DB">
+          <End Type="Travel_In_GroupDBModel.TravelingPassenger" Role="TravelingPassenger" Multiplicity="1" />
+          <End Type="Travel_In_GroupDBModel.TravelPassengerRange" Role="TravelPassengerRange" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TravelingPassenger">
+              <PropertyRef Name="TravelingIdPassenger" />
+            </Principal>
+            <Dependent Role="TravelPassengerRange">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Travel_In_GroupDBModelStoreContainer" CdmEntityContainer="Travel_In_GroupDBEntities">
+          <EntitySetMapping Name="Payments">
+            <EntityTypeMapping TypeName="Travel_In_GroupDBModel.Payment">
+              <MappingFragment StoreEntitySet="Payment">
+                <ScalarProperty Name="SumPay" ColumnName="SumPay" />
+                <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+                <ScalarProperty Name="IdPaymentKind" ColumnName="IdPaymentKind" />
+                <ScalarProperty Name="IdRegisteration" ColumnName="IdRegisteration" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PaymentKinds">
+            <EntityTypeMapping TypeName="Travel_In_GroupDBModel.PaymentKind">
+              <MappingFragment StoreEntitySet="PaymentKind">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TravelReportings">
+            <EntityTypeMapping TypeName="Travel_In_GroupDBModel.TravelReporting">
+              <MappingFragment StoreEntitySet="TravelReporting">
+                <ScalarProperty Name="IsPay" ColumnName="IsPay" />
+                <ScalarProperty Name="NumComplainants" ColumnName="NumComplainants" />
+                <ScalarProperty Name="NumPassengers" ColumnName="NumPassengers" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="IdTravelingDriver" ColumnName="IdTravelingDriver" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Registerations">
+            <EntityTypeMapping TypeName="Travel_In_GroupDBModel.Registeration">
+              <MappingFragment StoreEntitySet="Registeration">
+                <ScalarProperty Name="TravelingIdPassenger" ColumnName="TravelingIdPassenger" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="TravelingIdDriver" ColumnName="TravelingIdDriver" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RegistrationDateRanges">
+            <EntityTypeMapping TypeName="Travel_In_GroupDBModel.RegistrationDateRange">
+              <MappingFragment StoreEntitySet="RegistrationDateRange">
+                <ScalarProperty Name="IsComplain" ColumnName="IsComplain" />
+                <ScalarProperty Name="NumComplainants" ColumnName="NumComplainants" />
+                <ScalarProperty Name="NumPassengers" ColumnName="NumPassengers" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="DateInRange" ColumnName="DateInRange" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TravelDriverRanges">
+            <EntityTypeMapping TypeName="Travel_In_GroupDBModel.TravelDriverRange">
+              <MappingFragment StoreEntitySet="TravelDriverRange">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="NumSeatsAvailable" ColumnName="NumSeatsAvailable" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Identity" ColumnName="Identity" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Drivers">
+            <EntityTypeMapping TypeName="Travel_In_GroupDBModel.Driver">
+              <MappingFragment StoreEntitySet="Driver">
+                <ScalarProperty Name="CarDescription" ColumnName="CarDescription" />
+                <ScalarProperty Name="NumberOfSeats" ColumnName="NumberOfSeats" />
+                <ScalarProperty Name="Identity" ColumnName="Identity" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Passengers">
+            <EntityTypeMapping TypeName="Travel_In_GroupDBModel.Passenger">
+              <MappingFragment StoreEntitySet="Passenger">
+                <ScalarProperty Name="Identity" ColumnName="Identity" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TravelingDrivers">
+            <EntityTypeMapping TypeName="Travel_In_GroupDBModel.TravelingDriver">
+              <MappingFragment StoreEntitySet="TravelingDriver">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="NumSeats" ColumnName="NumSeats" />
+                <ScalarProperty Name="LngD" ColumnName="LngD" />
+                <ScalarProperty Name="LatD" ColumnName="LatD" />
+                <ScalarProperty Name="LngS" ColumnName="LngS" />
+                <ScalarProperty Name="LatS" ColumnName="LatS" />
+                <ScalarProperty Name="Destination" ColumnName="Destination" />
+                <ScalarProperty Name="Source" ColumnName="Source" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+                <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+                <ScalarProperty Name="Time" ColumnName="Time" />
+                <ScalarProperty Name="Places" ColumnName="Places" />
+                <ScalarProperty Name="Weekday" ColumnName="Weekday" />
+                <ScalarProperty Name="DriverId" ColumnName="DriverId" />
+                <ScalarProperty Name="TravelingIdDriver" ColumnName="TravelingIdDriver" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TravelingPassengers">
+            <EntityTypeMapping TypeName="Travel_In_GroupDBModel.TravelingPassenger">
+              <MappingFragment StoreEntitySet="TravelingPassenger">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsEmbedded" ColumnName="IsEmbedded" />
+                <ScalarProperty Name="ToTime" ColumnName="ToTime" />
+                <ScalarProperty Name="LngD" ColumnName="LngD" />
+                <ScalarProperty Name="LatD" ColumnName="LatD" />
+                <ScalarProperty Name="LngS" ColumnName="LngS" />
+                <ScalarProperty Name="LatS" ColumnName="LatS" />
+                <ScalarProperty Name="Destination" ColumnName="Destination" />
+                <ScalarProperty Name="Source" ColumnName="Source" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+                <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+                <ScalarProperty Name="FromTime" ColumnName="FromTime" />
+                <ScalarProperty Name="Places" ColumnName="Places" />
+                <ScalarProperty Name="Weekday" ColumnName="Weekday" />
+                <ScalarProperty Name="PassengerId" ColumnName="PassengerId" />
+                <ScalarProperty Name="TravelingIdPassenger" ColumnName="TravelingIdPassenger" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TravelPassengerRanges">
+            <EntityTypeMapping TypeName="Travel_In_GroupDBModel.TravelPassengerRange">
+              <MappingFragment StoreEntitySet="TravelPassengerRange">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="Travel_In_GroupDBModel.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="IdCardOwner" ColumnName="IdCardOwner" />
+                <ScalarProperty Name="Cvv" ColumnName="Cvv" />
+                <ScalarProperty Name="Validity" ColumnName="Validity" />
+                <ScalarProperty Name="CreditCardNumber" ColumnName="CreditCardNumber" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Cellphone" ColumnName="Cellphone" />
+                <ScalarProperty Name="Mail" ColumnName="Mail" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Identity" ColumnName="Identity" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

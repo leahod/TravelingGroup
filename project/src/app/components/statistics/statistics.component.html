@@ -1,0 +1,60 @@
+<h2>סטטיסטיקות</h2>
+<mat-tab-group animationDuration="0ms">
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <i class="material-icons"> person</i>
+    </ng-template>
+    <div class="statistic" >
+      <P>ניתוח נסיעות בין גברים לנשים</P>
+      <div>
+        <div>
+          <div class="chart">
+            <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType"
+              [options]="pieChartOptions" [plugins]="pieChartPlugins" [colors]="pieChartColors" [legend]="pieChartLegend">
+            </canvas>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button class="btnGlass" mat-button mat-raised-button color='rgba(255,0,0,0.3)' (click)="pieChartLegend=!pieChartLegend"><i class="material-icons">zoom_in </i></button>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <i class="material-icons">date_range </i>
+    </ng-template>
+    <div class="statistic">
+      <P>ניתוח היום המבוקש ביותר</P>
+      <div>
+        <div style="display: block">
+          <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+            [plugins]="barChartPlugins" [legend]="barChartLegend" [chartType]="barChartType">
+          </canvas>
+        </div>
+        <!-- <button mat-button mat-raised-button color="primary" (click)="randomize()">עדכון</button> -->
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <i class="material-icons"> ₪</i>
+    </ng-template>
+    <div class="statistic">
+      <p>ניתוח עלות נסיעות</p>
+      <div style="display: block">
+        <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels"
+          [chartType]="doughnutChartType"></canvas>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <i class="material-icons"> airport_shuttle</i>
+    </ng-template>
+    <div class="statistic">
+      <P>מספר מצטרפים בממוצע לרכב</P>
+      <div class="numPassengers">{{avgPassengers}}</div>
+    </div>
+  </mat-tab>
+</mat-tab-group>

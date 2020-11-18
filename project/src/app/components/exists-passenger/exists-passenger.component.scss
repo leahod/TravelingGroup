@@ -1,0 +1,51 @@
+.section{
+  height: 80vh;
+
+  h1{
+    color: #bb3209;
+    font-size: 36px;
+    font-weight: 300;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .form {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 30px;
+
+    .img {
+      width: 150px;
+      margin: 0 auto 30px;
+
+      img {
+        width: 100%;
+      }
+    }
+    
+    ul {
+      margin: 3%;
+      padding: 5px 5px 0 5px;
+    }
+    
+    li {
+      margin: 3%;
+      list-style: none;
+
+      .btn{
+        background:rgb(0,39,58);
+        width: 100%;
+        border: 0;
+        padding: 15px;
+        border-radius: 3px;
+        color: #FFFFFF;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      
+      .btn:hover{
+        background: #c24722;
+      }
+    }
+  }
+}

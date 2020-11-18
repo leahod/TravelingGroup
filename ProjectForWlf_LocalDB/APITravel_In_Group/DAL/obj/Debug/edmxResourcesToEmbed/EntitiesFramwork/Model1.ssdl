@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Travel_In_GroupDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Driver">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Identity" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="NumberOfSeats" Type="int" Nullable="false" />
+    <Property Name="CarDescription" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Passenger">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Identity" Type="nchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Registeration">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="TravelingId" Type="int" Nullable="false" />
+    <Property Name="PassengerId" Type="int" Nullable="false" />
+    <Property Name="Source" Type="nvarchar" MaxLength="50" />
+    <Property Name="Destination" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Table">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Travelings">
+    <Key>
+      <PropertyRef Name="TravelingId" />
+    </Key>
+    <Property Name="TravelingId" Type="int" Nullable="false" />
+    <Property Name="DriverId" Type="int" Nullable="false" />
+    <Property Name="Weekday" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Places" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Time" Type="time" Precision="7" Nullable="false" />
+    <Property Name="FromDate" Type="date" Nullable="false" />
+    <Property Name="ToDate" Type="date" Nullable="false" />
+    <Property Name="Price" Type="int" Nullable="false" />
+    <Property Name="Source" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Destination" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Identity" />
+    </Key>
+    <Property Name="Identity" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Mail" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Gender" Type="bit" />
+  </EntityType>
+  <Association Name="FK__Driver__Identity__2A4B4B5E">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Driver" Type="Self.Driver" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Identity" />
+      </Principal>
+      <Dependent Role="Driver">
+        <PropertyRef Name="Identity" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Passenger__Ident__276EDEB3">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Passenger" Type="Self.Passenger" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Identity" />
+      </Principal>
+      <Dependent Role="Passenger">
+        <PropertyRef Name="Identity" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Registera__Passe__30F848ED">
+    <End Role="Passenger" Type="Self.Passenger" Multiplicity="1" />
+    <End Role="Registeration" Type="Self.Registeration" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Passenger">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Registeration">
+        <PropertyRef Name="PassengerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Registera__Trave__300424B4">
+    <End Role="Travelings" Type="Self.Travelings" Multiplicity="1" />
+    <End Role="Registeration" Type="Self.Registeration" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Travelings">
+        <PropertyRef Name="TravelingId" />
+      </Principal>
+      <Dependent Role="Registeration">
+        <PropertyRef Name="TravelingId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Traveling__Drive__2D27B809">
+    <End Role="Driver" Type="Self.Driver" Multiplicity="1" />
+    <End Role="Travelings" Type="Self.Travelings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Driver">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Travelings">
+        <PropertyRef Name="DriverId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Travel_In_GroupDBModelStoreContainer">
+    <EntitySet Name="Driver" EntityType="Self.Driver" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Passenger" EntityType="Self.Passenger" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Registeration" EntityType="Self.Registeration" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Table" EntityType="Self.Table" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Travelings" EntityType="Self.Travelings" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Driver__Identity__2A4B4B5E" Association="Self.FK__Driver__Identity__2A4B4B5E">
+      <End Role="User" EntitySet="User" />
+      <End Role="Driver" EntitySet="Driver" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Passenger__Ident__276EDEB3" Association="Self.FK__Passenger__Ident__276EDEB3">
+      <End Role="User" EntitySet="User" />
+      <End Role="Passenger" EntitySet="Passenger" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Registera__Passe__30F848ED" Association="Self.FK__Registera__Passe__30F848ED">
+      <End Role="Passenger" EntitySet="Passenger" />
+      <End Role="Registeration" EntitySet="Registeration" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Registera__Trave__300424B4" Association="Self.FK__Registera__Trave__300424B4">
+      <End Role="Travelings" EntitySet="Travelings" />
+      <End Role="Registeration" EntitySet="Registeration" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Traveling__Drive__2D27B809" Association="Self.FK__Traveling__Drive__2D27B809">
+      <End Role="Driver" EntitySet="Driver" />
+      <End Role="Travelings" EntitySet="Travelings" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

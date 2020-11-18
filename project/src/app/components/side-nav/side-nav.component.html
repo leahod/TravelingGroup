@@ -1,0 +1,53 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="over">
+    <p class="header">Traveling Group</p>
+    <div (click)="add()">
+      <p>
+        <mat-icon class="icons">mode_edit</mat-icon>
+      </p>
+      <p>הוספת נסיעה</p>
+    </div>
+    <div (click)="travelings()" >
+      <p>
+        <mat-icon class="icons">content_copy</mat-icon>
+      </p>
+      <p>צפיה בנסיעות</p>
+    </div>
+    <div (click)="statistics()">
+      <p>
+        <mat-icon class="icons">assessment</mat-icon>
+      </p>
+      <p>צפיה בסטטיסטיקות</p>
+    </div>
+    <div (click)="payments()">
+      <p>
+        <mat-icon class="icons">content_copy</mat-icon>
+      </p>
+      <p>צפיה בתשלומים</p>
+    </div>
+    <div *ngIf="changeUser.changeUserLogin" (click)="changeUserLogin()">
+      <p>
+        <mat-icon class="icons">person</mat-icon>
+      </p>
+      <p>{{changeUser.textUser}}</p>
+    </div>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <div class="row">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
+        (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <button class="close" (click)="close()">
+      <i class="material-icons"> close</i>
+    </button>
+    <div>
+      <!-- <app-change-user-login></app-change-user-login> -->
+      <router-outlet></router-outlet>
+    </div>
+    <app-footer></app-footer>
+  </div>
+
+</mat-drawer-container>

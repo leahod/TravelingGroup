@@ -1,0 +1,19 @@
+<ng4-loading-spinner> </ng4-loading-spinner>
+ 
+<a (click)="close()">  <i class="material-icons"  >close</i> </a>
+<h1 mat-dialog-title>תאריך התלונה על הנסיעה {{data.name}}</h1>
+<h2 mat-dialog-title>עקב אי הגעת הנהג {{data.name}}</h2>
+<div mat-dialog-content>
+   
+  <mat-form-field>
+    <mat-label>בתאריך</mat-label>
+    <input matInput [matDatepicker]="picker" [(ngModel)]="traveling.DateInRange" name="fromDate">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker startView="year" [startAt]="startDate"></mat-datepicker>
+  </mat-form-field><br>
+  
+</div>
+<div mat-dialog-actions>
+  <!-- <button mat-button (click)="onNoClick()">No Thanks</button> -->
+  <button mat-button class="btnOk"   cdkFocusInitial  (click)="complaintTraveling()">אישור תלונה</button>
+</div>

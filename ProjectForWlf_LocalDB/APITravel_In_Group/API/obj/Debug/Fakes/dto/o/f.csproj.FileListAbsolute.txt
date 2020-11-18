@@ -1,0 +1,102 @@
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\DTO.Fakes.xml
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\DTO.Fakes.dll
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\DTO.Fakes.pdb
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\BL.dll
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\DAL.dll
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\DTO.dll
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\EntityFramework.dll
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\EntityFramework.SqlServer.dll
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\Microsoft.QualityTools.Testing.Fakes.dll
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\Newtonsoft.Json.dll
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Net.Http.Formatting.dll
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Web.Cors.dll
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Web.Http.Cors.dll
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Web.Http.dll
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Web.Http.WebHost.dll
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\DTO.pdb
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\BL.pdb
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\BL.dll.config
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\DAL.pdb
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\DAL.dll.config
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\EntityFramework.xml
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\EntityFramework.SqlServer.xml
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\Newtonsoft.Json.xml
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Net.Http.Formatting.xml
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Web.Http.Cors.xml
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Web.Http.xml
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Web.Http.WebHost.xml
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\o\f.csprojAssemblyReference.cache
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\o\f.csproj.CoreCompileInputs.cache
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\o\f.csproj.CopyComplete
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\o\DTO.Fakes.dll
+Y:\תשפ\1\לאה מולאיוף\פרויקטים\בעזרת ה\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\o\DTO.Fakes.pdb
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\DTO.Fakes.xml
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\DTO.Fakes.dll
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\DTO.Fakes.pdb
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\BL.dll
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\DAL.dll
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\DTO.dll
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\EntityFramework.dll
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\EntityFramework.SqlServer.dll
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\Newtonsoft.Json.dll
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Net.Http.Formatting.dll
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Web.Cors.dll
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Web.Http.Cors.dll
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Web.Http.dll
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Web.Http.WebHost.dll
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\DTO.pdb
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\BL.pdb
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\BL.dll.config
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\DAL.pdb
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\DAL.dll.config
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\EntityFramework.xml
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\EntityFramework.SqlServer.xml
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\Newtonsoft.Json.xml
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Net.Http.Formatting.xml
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Web.Http.Cors.xml
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Web.Http.xml
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Web.Http.WebHost.xml
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\o\f.csprojAssemblyReference.cache
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\o\f.csproj.CoreCompileInputs.cache
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\o\f.csproj.CopyComplete
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\o\DTO.Fakes.dll
+C:\Users\user1\Desktop\ProjectForWlf_LocalDB\APITravel_In_Group\API\obj\Debug\Fakes\dto\o\DTO.Fakes.pdb
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\DTO.Fakes.xml
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\DTO.Fakes.dll
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\DTO.Fakes.pdb
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\BL.dll
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\DAL.dll
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\DTO.dll
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\EntityFramework.dll
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\EntityFramework.SqlServer.dll
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\Newtonsoft.Json.dll
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Net.Http.Formatting.dll
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Web.Cors.dll
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Web.Http.Cors.dll
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Web.Http.dll
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Web.Http.WebHost.dll
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\DTO.pdb
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\BL.pdb
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\BL.dll.config
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\DAL.pdb
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\DAL.dll.config
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\EntityFramework.xml
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\EntityFramework.SqlServer.xml
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\Newtonsoft.Json.xml
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Net.Http.Formatting.xml
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Web.Http.Cors.xml
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Web.Http.xml
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\b\System.Web.Http.WebHost.xml
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\o\f.csprojAssemblyReference.cache
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\o\f.csproj.CoreCompileInputs.cache
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\o\f.csproj.CopyComplete
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\o\DTO.Fakes.dll
+C:\Users\user1\Desktop\APITravel_In_Group\API\obj\Debug\Fakes\dto\o\DTO.Fakes.pdb

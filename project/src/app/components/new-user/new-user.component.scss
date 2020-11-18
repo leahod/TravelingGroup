@@ -1,0 +1,41 @@
+.section{
+  height: 80vh;
+  text-align: center;
+
+  h1{
+    color:#bb3209;
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 20px;
+  }
+
+  .img {
+    width: 120px;
+    margin: 0 auto 30px;
+    margin-bottom: 0%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  mat-form-field{
+    text-align: right;
+  }
+
+  .tabs{    
+    .btn{
+      background:rgb(0,39,58);
+      width: 200px;
+      border: 0;
+      border-radius: 3px;
+      color: #FFFFFF;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    
+    .btn:hover{
+      background-color:#bb3209;
+    }
+  }
+}

@@ -1,0 +1,1916 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DTO.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:DTO.Fakes.ShimAddressDTO">
+            <summary>Shim type of DTO.AddressDTO</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimAddressDTO.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimAddressDTO.#ctor(DTO.AddressDTO)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimAddressDTO.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimAddressDTO.AllInstances.CityGet">
+            <summary>Sets the shim of AddressDTO.get_City()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimAddressDTO.AllInstances.CitySetString">
+            <summary>Sets the shim of AddressDTO.set_City(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimAddressDTO.AllInstances.HouseNumberGet">
+            <summary>Sets the shim of AddressDTO.get_HouseNumber()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimAddressDTO.AllInstances.HouseNumberSetInt32">
+            <summary>Sets the shim of AddressDTO.set_HouseNumber(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimAddressDTO.AllInstances.IdGet">
+            <summary>Sets the shim of AddressDTO.get_Id()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimAddressDTO.AllInstances.IdSetInt32">
+            <summary>Sets the shim of AddressDTO.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimAddressDTO.AllInstances.StreetGet">
+            <summary>Sets the shim of AddressDTO.get_Street()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimAddressDTO.AllInstances.StreetSetString">
+            <summary>Sets the shim of AddressDTO.set_Street(String value)</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimAddressDTO.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimAddressDTO.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimAddressDTO.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimAddressDTO.CityGet">
+            <summary>Sets the shim of AddressDTO.get_City()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimAddressDTO.CitySetString">
+            <summary>Sets the shim of AddressDTO.set_City(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimAddressDTO.Constructor">
+            <summary>Sets the shim of AddressDTO.AddressDTO()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimAddressDTO.HouseNumberGet">
+            <summary>Sets the shim of AddressDTO.get_HouseNumber()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimAddressDTO.HouseNumberSetInt32">
+            <summary>Sets the shim of AddressDTO.set_HouseNumber(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimAddressDTO.IdGet">
+            <summary>Sets the shim of AddressDTO.get_Id()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimAddressDTO.IdSetInt32">
+            <summary>Sets the shim of AddressDTO.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimAddressDTO.StreetGet">
+            <summary>Sets the shim of AddressDTO.get_Street()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimAddressDTO.StreetSetString">
+            <summary>Sets the shim of AddressDTO.set_Street(String value)</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimDriverDTO">
+            <summary>Shim type of DTO.DriverDTO</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimDriverDTO.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimDriverDTO.#ctor(DTO.DriverDTO)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimDriverDTO.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimDriverDTO.AllInstances.CarDescriptionGet">
+            <summary>Sets the shim of DriverDTO.get_CarDescription()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimDriverDTO.AllInstances.CarDescriptionSetString">
+            <summary>Sets the shim of DriverDTO.set_CarDescription(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimDriverDTO.AllInstances.IdGet">
+            <summary>Sets the shim of DriverDTO.get_Id()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimDriverDTO.AllInstances.IdSetInt32">
+            <summary>Sets the shim of DriverDTO.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimDriverDTO.AllInstances.NumberOfSeatsGet">
+            <summary>Sets the shim of DriverDTO.get_NumberOfSeats()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimDriverDTO.AllInstances.NumberOfSeatsSetInt32">
+            <summary>Sets the shim of DriverDTO.set_NumberOfSeats(Int32 value)</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimDriverDTO.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimDriverDTO.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimDriverDTO.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimDriverDTO.CarDescriptionGet">
+            <summary>Sets the shim of DriverDTO.get_CarDescription()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimDriverDTO.CarDescriptionSetString">
+            <summary>Sets the shim of DriverDTO.set_CarDescription(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimDriverDTO.Constructor">
+            <summary>Sets the shim of DriverDTO.DriverDTO()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimDriverDTO.IdGet">
+            <summary>Sets the shim of DriverDTO.get_Id()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimDriverDTO.IdSetInt32">
+            <summary>Sets the shim of DriverDTO.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimDriverDTO.NumberOfSeatsGet">
+            <summary>Sets the shim of DriverDTO.get_NumberOfSeats()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimDriverDTO.NumberOfSeatsSetInt32">
+            <summary>Sets the shim of DriverDTO.set_NumberOfSeats(Int32 value)</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimJoinTraveling">
+            <summary>Shim type of DTO.JoinTraveling</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimJoinTraveling.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimJoinTraveling.#ctor(DTO.JoinTraveling)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimJoinTraveling.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimJoinTraveling.AllInstances.idTravelingDGet">
+            <summary>Sets the shim of JoinTraveling.get_idTravelingD()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimJoinTraveling.AllInstances.idTravelingDSetInt32">
+            <summary>Sets the shim of JoinTraveling.set_idTravelingD(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimJoinTraveling.AllInstances.idTravelingPGet">
+            <summary>Sets the shim of JoinTraveling.get_idTravelingP()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimJoinTraveling.AllInstances.idTravelingPSetInt32">
+            <summary>Sets the shim of JoinTraveling.set_idTravelingP(Int32 value)</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimJoinTraveling.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimJoinTraveling.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimJoinTraveling.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimJoinTraveling.Constructor">
+            <summary>Sets the shim of JoinTraveling.JoinTraveling()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimJoinTraveling.idTravelingDGet">
+            <summary>Sets the shim of JoinTraveling.get_idTravelingD()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimJoinTraveling.idTravelingDSetInt32">
+            <summary>Sets the shim of JoinTraveling.set_idTravelingD(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimJoinTraveling.idTravelingPGet">
+            <summary>Sets the shim of JoinTraveling.get_idTravelingP()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimJoinTraveling.idTravelingPSetInt32">
+            <summary>Sets the shim of JoinTraveling.set_idTravelingP(Int32 value)</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimPassngerDTO">
+            <summary>Shim type of DTO.PassngerDTO</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimPassngerDTO.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimPassngerDTO.#ctor(DTO.PassngerDTO)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimPassngerDTO.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPassngerDTO.AllInstances.IdGet">
+            <summary>Sets the shim of PassngerDTO.get_Id()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPassngerDTO.AllInstances.IdSetInt32">
+            <summary>Sets the shim of PassngerDTO.set_Id(Int32 value)</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimPassngerDTO.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimPassngerDTO.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPassngerDTO.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPassngerDTO.Constructor">
+            <summary>Sets the shim of PassngerDTO.PassngerDTO()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPassngerDTO.IdGet">
+            <summary>Sets the shim of PassngerDTO.get_Id()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPassngerDTO.IdSetInt32">
+            <summary>Sets the shim of PassngerDTO.set_Id(Int32 value)</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimPaymentDTO">
+            <summary>Shim type of DTO.PaymentDTO</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimPaymentDTO.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimPaymentDTO.#ctor(DTO.PaymentDTO)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimPaymentDTO.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPaymentDTO.AllInstances.IdGet">
+            <summary>Sets the shim of PaymentDTO.get_Id()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPaymentDTO.AllInstances.IdPaymentKindGet">
+            <summary>Sets the shim of PaymentDTO.get_IdPaymentKind()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPaymentDTO.AllInstances.IdPaymentKindSetInt32">
+            <summary>Sets the shim of PaymentDTO.set_IdPaymentKind(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPaymentDTO.AllInstances.IdRegisterationGet">
+            <summary>Sets the shim of PaymentDTO.get_IdRegisteration()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPaymentDTO.AllInstances.IdRegisterationSetInt32">
+            <summary>Sets the shim of PaymentDTO.set_IdRegisteration(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPaymentDTO.AllInstances.IdSetInt32">
+            <summary>Sets the shim of PaymentDTO.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPaymentDTO.AllInstances.PaymentDateGet">
+            <summary>Sets the shim of PaymentDTO.get_PaymentDate()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPaymentDTO.AllInstances.PaymentDateSetDateTime">
+            <summary>Sets the shim of PaymentDTO.set_PaymentDate(DateTime value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPaymentDTO.AllInstances.SumPayGet">
+            <summary>Sets the shim of PaymentDTO.get_SumPay()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPaymentDTO.AllInstances.SumPaySetDouble">
+            <summary>Sets the shim of PaymentDTO.set_SumPay(Double value)</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimPaymentDTO.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimPaymentDTO.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPaymentDTO.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPaymentDTO.Constructor">
+            <summary>Sets the shim of PaymentDTO.PaymentDTO()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPaymentDTO.IdGet">
+            <summary>Sets the shim of PaymentDTO.get_Id()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPaymentDTO.IdPaymentKindGet">
+            <summary>Sets the shim of PaymentDTO.get_IdPaymentKind()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPaymentDTO.IdPaymentKindSetInt32">
+            <summary>Sets the shim of PaymentDTO.set_IdPaymentKind(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPaymentDTO.IdRegisterationGet">
+            <summary>Sets the shim of PaymentDTO.get_IdRegisteration()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPaymentDTO.IdRegisterationSetInt32">
+            <summary>Sets the shim of PaymentDTO.set_IdRegisteration(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPaymentDTO.IdSetInt32">
+            <summary>Sets the shim of PaymentDTO.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPaymentDTO.PaymentDateGet">
+            <summary>Sets the shim of PaymentDTO.get_PaymentDate()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPaymentDTO.PaymentDateSetDateTime">
+            <summary>Sets the shim of PaymentDTO.set_PaymentDate(DateTime value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPaymentDTO.SumPayGet">
+            <summary>Sets the shim of PaymentDTO.get_SumPay()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPaymentDTO.SumPaySetDouble">
+            <summary>Sets the shim of PaymentDTO.set_SumPay(Double value)</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimPoint">
+            <summary>Shim type of DTO.Point</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimPoint.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimPoint.#ctor(DTO.Point)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimPoint.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPoint.AllInstances.LatGet">
+            <summary>Sets the shim of Point.get_Lat()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPoint.AllInstances.LatSetDouble">
+            <summary>Sets the shim of Point.set_Lat(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPoint.AllInstances.LngGet">
+            <summary>Sets the shim of Point.get_Lng()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPoint.AllInstances.LngSetDouble">
+            <summary>Sets the shim of Point.set_Lng(Double value)</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimPoint.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimPoint.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPoint.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPoint.Constructor">
+            <summary>Sets the shim of Point.Point()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPoint.LatGet">
+            <summary>Sets the shim of Point.get_Lat()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPoint.LatSetDouble">
+            <summary>Sets the shim of Point.set_Lat(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPoint.LngGet">
+            <summary>Sets the shim of Point.get_Lng()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimPoint.LngSetDouble">
+            <summary>Sets the shim of Point.set_Lng(Double value)</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimRegisterationDTO">
+            <summary>Shim type of DTO.RegisterationDTO</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimRegisterationDTO.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimRegisterationDTO.#ctor(DTO.RegisterationDTO)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimRegisterationDTO.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegisterationDTO.AllInstances.DateGet">
+            <summary>Sets the shim of RegisterationDTO.get_Date()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegisterationDTO.AllInstances.DateSetDateTime">
+            <summary>Sets the shim of RegisterationDTO.set_Date(DateTime value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegisterationDTO.AllInstances.IdGet">
+            <summary>Sets the shim of RegisterationDTO.get_Id()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegisterationDTO.AllInstances.IdSetInt32">
+            <summary>Sets the shim of RegisterationDTO.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegisterationDTO.AllInstances.travelingIdDriverGet">
+            <summary>Sets the shim of RegisterationDTO.get_travelingIdDriver()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegisterationDTO.AllInstances.travelingIdDriverSetInt32">
+            <summary>Sets the shim of RegisterationDTO.set_travelingIdDriver(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegisterationDTO.AllInstances.travelingIdPassengerGet">
+            <summary>Sets the shim of RegisterationDTO.get_travelingIdPassenger()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegisterationDTO.AllInstances.travelingIdPassengerSetInt32">
+            <summary>Sets the shim of RegisterationDTO.set_travelingIdPassenger(Int32 value)</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimRegisterationDTO.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimRegisterationDTO.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegisterationDTO.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegisterationDTO.Constructor">
+            <summary>Sets the shim of RegisterationDTO.RegisterationDTO()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegisterationDTO.DateGet">
+            <summary>Sets the shim of RegisterationDTO.get_Date()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegisterationDTO.DateSetDateTime">
+            <summary>Sets the shim of RegisterationDTO.set_Date(DateTime value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegisterationDTO.IdGet">
+            <summary>Sets the shim of RegisterationDTO.get_Id()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegisterationDTO.IdSetInt32">
+            <summary>Sets the shim of RegisterationDTO.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegisterationDTO.travelingIdDriverGet">
+            <summary>Sets the shim of RegisterationDTO.get_travelingIdDriver()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegisterationDTO.travelingIdDriverSetInt32">
+            <summary>Sets the shim of RegisterationDTO.set_travelingIdDriver(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegisterationDTO.travelingIdPassengerGet">
+            <summary>Sets the shim of RegisterationDTO.get_travelingIdPassenger()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegisterationDTO.travelingIdPassengerSetInt32">
+            <summary>Sets the shim of RegisterationDTO.set_travelingIdPassenger(Int32 value)</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimRegistrationDateRangeDTO">
+            <summary>Shim type of DTO.RegistrationDateRangeDTO</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimRegistrationDateRangeDTO.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimRegistrationDateRangeDTO.#ctor(DTO.RegistrationDateRangeDTO)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimRegistrationDateRangeDTO.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.AllInstances.DateInRangeGet">
+            <summary>Sets the shim of RegistrationDateRangeDTO.get_DateInRange()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.AllInstances.DateInRangeSetDateTime">
+            <summary>Sets the shim of RegistrationDateRangeDTO.set_DateInRange(DateTime value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.AllInstances.IdGet">
+            <summary>Sets the shim of RegistrationDateRangeDTO.get_Id()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.AllInstances.IdSetInt32">
+            <summary>Sets the shim of RegistrationDateRangeDTO.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.AllInstances.IsActiveGet">
+            <summary>Sets the shim of RegistrationDateRangeDTO.get_IsActive()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.AllInstances.IsActiveSetBoolean">
+            <summary>Sets the shim of RegistrationDateRangeDTO.set_IsActive(Boolean value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.AllInstances.IsComplainGet">
+            <summary>Sets the shim of RegistrationDateRangeDTO.get_IsComplain()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.AllInstances.IsComplainSetBoolean">
+            <summary>Sets the shim of RegistrationDateRangeDTO.set_IsComplain(Boolean value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.AllInstances.NumComplainantsGet">
+            <summary>Sets the shim of RegistrationDateRangeDTO.get_NumComplainants()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.AllInstances.NumComplainantsSetInt32">
+            <summary>Sets the shim of RegistrationDateRangeDTO.set_NumComplainants(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.AllInstances.NumPassengersGet">
+            <summary>Sets the shim of RegistrationDateRangeDTO.get_NumPassengers()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.AllInstances.NumPassengersSetInt32">
+            <summary>Sets the shim of RegistrationDateRangeDTO.set_NumPassengers(Int32 value)</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimRegistrationDateRangeDTO.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimRegistrationDateRangeDTO.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.Constructor">
+            <summary>Sets the shim of RegistrationDateRangeDTO.RegistrationDateRangeDTO()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.DateInRangeGet">
+            <summary>Sets the shim of RegistrationDateRangeDTO.get_DateInRange()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.DateInRangeSetDateTime">
+            <summary>Sets the shim of RegistrationDateRangeDTO.set_DateInRange(DateTime value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.IdGet">
+            <summary>Sets the shim of RegistrationDateRangeDTO.get_Id()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.IdSetInt32">
+            <summary>Sets the shim of RegistrationDateRangeDTO.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.IsActiveGet">
+            <summary>Sets the shim of RegistrationDateRangeDTO.get_IsActive()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.IsActiveSetBoolean">
+            <summary>Sets the shim of RegistrationDateRangeDTO.set_IsActive(Boolean value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.IsComplainGet">
+            <summary>Sets the shim of RegistrationDateRangeDTO.get_IsComplain()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.IsComplainSetBoolean">
+            <summary>Sets the shim of RegistrationDateRangeDTO.set_IsComplain(Boolean value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.NumComplainantsGet">
+            <summary>Sets the shim of RegistrationDateRangeDTO.get_NumComplainants()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.NumComplainantsSetInt32">
+            <summary>Sets the shim of RegistrationDateRangeDTO.set_NumComplainants(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.NumPassengersGet">
+            <summary>Sets the shim of RegistrationDateRangeDTO.get_NumPassengers()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRegistrationDateRangeDTO.NumPassengersSetInt32">
+            <summary>Sets the shim of RegistrationDateRangeDTO.set_NumPassengers(Int32 value)</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimRoute">
+            <summary>Shim type of DTO.Route</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimRoute.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimRoute.#ctor(DTO.Route)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimRoute.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRoute.AllInstances.DestinationGet">
+            <summary>Sets the shim of Route.get_Destination()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRoute.AllInstances.DestinationSetString">
+            <summary>Sets the shim of Route.set_Destination(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRoute.AllInstances.SourceGet">
+            <summary>Sets the shim of Route.get_Source()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRoute.AllInstances.SourceSetString">
+            <summary>Sets the shim of Route.set_Source(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRoute.AllInstances.listStationGet">
+            <summary>Sets the shim of Route.get_listStation()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRoute.AllInstances.listStationSetListOfStation">
+            <summary>Sets the shim of Route.set_listStation(List`1&lt;Station&gt; value)</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimRoute.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimRoute.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRoute.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRoute.Constructor">
+            <summary>Sets the shim of Route.Route()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRoute.DestinationGet">
+            <summary>Sets the shim of Route.get_Destination()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRoute.DestinationSetString">
+            <summary>Sets the shim of Route.set_Destination(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRoute.SourceGet">
+            <summary>Sets the shim of Route.get_Source()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRoute.SourceSetString">
+            <summary>Sets the shim of Route.set_Source(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRoute.listStationGet">
+            <summary>Sets the shim of Route.get_listStation()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimRoute.listStationSetListOfStation">
+            <summary>Sets the shim of Route.set_listStation(List`1&lt;Station&gt; value)</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimStation">
+            <summary>Shim type of DTO.Station</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimStation.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimStation.#ctor(DTO.Station)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimStation.AdderssGet">
+            <summary>Sets the shim of Station.get_Adderss()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimStation.AdderssSetString">
+            <summary>Sets the shim of Station.set_Adderss(String value)</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimStation.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimStation.AllInstances.AdderssGet">
+            <summary>Sets the shim of Station.get_Adderss()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimStation.AllInstances.AdderssSetString">
+            <summary>Sets the shim of Station.set_Adderss(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimStation.AllInstances.CellphoneGet">
+            <summary>Sets the shim of Station.get_Cellphone()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimStation.AllInstances.CellphoneSetString">
+            <summary>Sets the shim of Station.set_Cellphone(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimStation.AllInstances.DistanceGet">
+            <summary>Sets the shim of Station.get_Distance()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimStation.AllInstances.DistanceSetDouble">
+            <summary>Sets the shim of Station.set_Distance(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimStation.AllInstances.IsCollectionStationGet">
+            <summary>Sets the shim of Station.get_IsCollectionStation()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimStation.AllInstances.IsCollectionStationSetBoolean">
+            <summary>Sets the shim of Station.set_IsCollectionStation(Boolean value)</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimStation.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimStation.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimStation.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimStation.CellphoneGet">
+            <summary>Sets the shim of Station.get_Cellphone()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimStation.CellphoneSetString">
+            <summary>Sets the shim of Station.set_Cellphone(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimStation.Constructor">
+            <summary>Sets the shim of Station.Station()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimStation.DistanceGet">
+            <summary>Sets the shim of Station.get_Distance()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimStation.DistanceSetDouble">
+            <summary>Sets the shim of Station.set_Distance(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimStation.IsCollectionStationGet">
+            <summary>Sets the shim of Station.get_IsCollectionStation()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimStation.IsCollectionStationSetBoolean">
+            <summary>Sets the shim of Station.set_IsCollectionStation(Boolean value)</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimTravelDriverRangeDTO">
+            <summary>Shim type of DTO.TravelDriverRangeDTO</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimTravelDriverRangeDTO.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimTravelDriverRangeDTO.#ctor(DTO.TravelDriverRangeDTO)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimTravelDriverRangeDTO.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelDriverRangeDTO.AllInstances.DateGet">
+            <summary>Sets the shim of TravelDriverRangeDTO.get_Date()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelDriverRangeDTO.AllInstances.DateSetDateTime">
+            <summary>Sets the shim of TravelDriverRangeDTO.set_Date(DateTime value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelDriverRangeDTO.AllInstances.IdGet">
+            <summary>Sets the shim of TravelDriverRangeDTO.get_Id()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelDriverRangeDTO.AllInstances.IdSetInt32">
+            <summary>Sets the shim of TravelDriverRangeDTO.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelDriverRangeDTO.AllInstances.IdentityGet">
+            <summary>Sets the shim of TravelDriverRangeDTO.get_Identity()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelDriverRangeDTO.AllInstances.IdentitySetInt32">
+            <summary>Sets the shim of TravelDriverRangeDTO.set_Identity(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelDriverRangeDTO.AllInstances.IsActiveGet">
+            <summary>Sets the shim of TravelDriverRangeDTO.get_IsActive()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelDriverRangeDTO.AllInstances.IsActiveSetBoolean">
+            <summary>Sets the shim of TravelDriverRangeDTO.set_IsActive(Boolean value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelDriverRangeDTO.AllInstances.NumSeatsAvailableGet">
+            <summary>Sets the shim of TravelDriverRangeDTO.get_NumSeatsAvailable()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelDriverRangeDTO.AllInstances.NumSeatsAvailableSetInt32">
+            <summary>Sets the shim of TravelDriverRangeDTO.set_NumSeatsAvailable(Int32 value)</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimTravelDriverRangeDTO.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimTravelDriverRangeDTO.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelDriverRangeDTO.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelDriverRangeDTO.Constructor">
+            <summary>Sets the shim of TravelDriverRangeDTO.TravelDriverRangeDTO()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelDriverRangeDTO.DateGet">
+            <summary>Sets the shim of TravelDriverRangeDTO.get_Date()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelDriverRangeDTO.DateSetDateTime">
+            <summary>Sets the shim of TravelDriverRangeDTO.set_Date(DateTime value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelDriverRangeDTO.IdGet">
+            <summary>Sets the shim of TravelDriverRangeDTO.get_Id()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelDriverRangeDTO.IdSetInt32">
+            <summary>Sets the shim of TravelDriverRangeDTO.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelDriverRangeDTO.IdentityGet">
+            <summary>Sets the shim of TravelDriverRangeDTO.get_Identity()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelDriverRangeDTO.IdentitySetInt32">
+            <summary>Sets the shim of TravelDriverRangeDTO.set_Identity(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelDriverRangeDTO.IsActiveGet">
+            <summary>Sets the shim of TravelDriverRangeDTO.get_IsActive()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelDriverRangeDTO.IsActiveSetBoolean">
+            <summary>Sets the shim of TravelDriverRangeDTO.set_IsActive(Boolean value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelDriverRangeDTO.NumSeatsAvailableGet">
+            <summary>Sets the shim of TravelDriverRangeDTO.get_NumSeatsAvailable()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelDriverRangeDTO.NumSeatsAvailableSetInt32">
+            <summary>Sets the shim of TravelDriverRangeDTO.set_NumSeatsAvailable(Int32 value)</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimTravelPassengerRangeDTO">
+            <summary>Shim type of DTO.TravelPassengerRangeDTO</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimTravelPassengerRangeDTO.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimTravelPassengerRangeDTO.#ctor(DTO.TravelPassengerRangeDTO)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimTravelPassengerRangeDTO.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelPassengerRangeDTO.AllInstances.DateGet">
+            <summary>Sets the shim of TravelPassengerRangeDTO.get_Date()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelPassengerRangeDTO.AllInstances.DateSetDateTime">
+            <summary>Sets the shim of TravelPassengerRangeDTO.set_Date(DateTime value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelPassengerRangeDTO.AllInstances.IdGet">
+            <summary>Sets the shim of TravelPassengerRangeDTO.get_Id()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelPassengerRangeDTO.AllInstances.IdSetInt32">
+            <summary>Sets the shim of TravelPassengerRangeDTO.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelPassengerRangeDTO.AllInstances.IsActiveGet">
+            <summary>Sets the shim of TravelPassengerRangeDTO.get_IsActive()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelPassengerRangeDTO.AllInstances.IsActiveSetBoolean">
+            <summary>Sets the shim of TravelPassengerRangeDTO.set_IsActive(Boolean value)</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimTravelPassengerRangeDTO.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimTravelPassengerRangeDTO.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelPassengerRangeDTO.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelPassengerRangeDTO.Constructor">
+            <summary>Sets the shim of TravelPassengerRangeDTO.TravelPassengerRangeDTO()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelPassengerRangeDTO.DateGet">
+            <summary>Sets the shim of TravelPassengerRangeDTO.get_Date()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelPassengerRangeDTO.DateSetDateTime">
+            <summary>Sets the shim of TravelPassengerRangeDTO.set_Date(DateTime value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelPassengerRangeDTO.IdGet">
+            <summary>Sets the shim of TravelPassengerRangeDTO.get_Id()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelPassengerRangeDTO.IdSetInt32">
+            <summary>Sets the shim of TravelPassengerRangeDTO.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelPassengerRangeDTO.IsActiveGet">
+            <summary>Sets the shim of TravelPassengerRangeDTO.get_IsActive()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelPassengerRangeDTO.IsActiveSetBoolean">
+            <summary>Sets the shim of TravelPassengerRangeDTO.set_IsActive(Boolean value)</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimTravelReportingDTO">
+            <summary>Shim type of DTO.TravelReportingDTO</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimTravelReportingDTO.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimTravelReportingDTO.#ctor(DTO.TravelReportingDTO)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimTravelReportingDTO.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelReportingDTO.AllInstances.DateGet">
+            <summary>Sets the shim of TravelReportingDTO.get_Date()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelReportingDTO.AllInstances.DateSetDateTime">
+            <summary>Sets the shim of TravelReportingDTO.set_Date(DateTime value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelReportingDTO.AllInstances.IdTravelingDriverGet">
+            <summary>Sets the shim of TravelReportingDTO.get_IdTravelingDriver()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelReportingDTO.AllInstances.IdTravelingDriverSetInt32">
+            <summary>Sets the shim of TravelReportingDTO.set_IdTravelingDriver(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelReportingDTO.AllInstances.IsPayGet">
+            <summary>Sets the shim of TravelReportingDTO.get_IsPay()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelReportingDTO.AllInstances.IsPaySetBoolean">
+            <summary>Sets the shim of TravelReportingDTO.set_IsPay(Boolean value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelReportingDTO.AllInstances.NumComplainantsGet">
+            <summary>Sets the shim of TravelReportingDTO.get_NumComplainants()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelReportingDTO.AllInstances.NumComplainantsSetInt32">
+            <summary>Sets the shim of TravelReportingDTO.set_NumComplainants(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelReportingDTO.AllInstances.NumPassengersGet">
+            <summary>Sets the shim of TravelReportingDTO.get_NumPassengers()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelReportingDTO.AllInstances.NumPassengersSetInt32">
+            <summary>Sets the shim of TravelReportingDTO.set_NumPassengers(Int32 value)</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimTravelReportingDTO.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimTravelReportingDTO.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelReportingDTO.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelReportingDTO.Constructor">
+            <summary>Sets the shim of TravelReportingDTO.TravelReportingDTO()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelReportingDTO.DateGet">
+            <summary>Sets the shim of TravelReportingDTO.get_Date()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelReportingDTO.DateSetDateTime">
+            <summary>Sets the shim of TravelReportingDTO.set_Date(DateTime value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelReportingDTO.IdTravelingDriverGet">
+            <summary>Sets the shim of TravelReportingDTO.get_IdTravelingDriver()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelReportingDTO.IdTravelingDriverSetInt32">
+            <summary>Sets the shim of TravelReportingDTO.set_IdTravelingDriver(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelReportingDTO.IsPayGet">
+            <summary>Sets the shim of TravelReportingDTO.get_IsPay()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelReportingDTO.IsPaySetBoolean">
+            <summary>Sets the shim of TravelReportingDTO.set_IsPay(Boolean value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelReportingDTO.NumComplainantsGet">
+            <summary>Sets the shim of TravelReportingDTO.get_NumComplainants()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelReportingDTO.NumComplainantsSetInt32">
+            <summary>Sets the shim of TravelReportingDTO.set_NumComplainants(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelReportingDTO.NumPassengersGet">
+            <summary>Sets the shim of TravelReportingDTO.get_NumPassengers()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelReportingDTO.NumPassengersSetInt32">
+            <summary>Sets the shim of TravelReportingDTO.set_NumPassengers(Int32 value)</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimTravelingDriverDTO">
+            <summary>Shim type of DTO.TravelingDriverDTO</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimTravelingDriverDTO.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimTravelingDriverDTO.#ctor(DTO.TravelingDriverDTO)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimTravelingDriverDTO.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.DestinationGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_Destination()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.DestinationSetString">
+            <summary>Sets the shim of TravelingDriverDTO.set_Destination(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.DriverIdGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_DriverId()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.DriverIdSetInt32">
+            <summary>Sets the shim of TravelingDriverDTO.set_DriverId(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.FromDateGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_FromDate()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.FromDateSetDateTime">
+            <summary>Sets the shim of TravelingDriverDTO.set_FromDate(DateTime value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.IsActiveGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_IsActive()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.IsActiveSetBoolean">
+            <summary>Sets the shim of TravelingDriverDTO.set_IsActive(Boolean value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.LatDGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_LatD()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.LatDSetDouble">
+            <summary>Sets the shim of TravelingDriverDTO.set_LatD(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.LatSGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_LatS()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.LatSSetDouble">
+            <summary>Sets the shim of TravelingDriverDTO.set_LatS(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.LngDGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_LngD()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.LngDSetDouble">
+            <summary>Sets the shim of TravelingDriverDTO.set_LngD(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.LngSGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_LngS()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.LngSSetDouble">
+            <summary>Sets the shim of TravelingDriverDTO.set_LngS(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.NumSeatsGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_NumSeats()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.NumSeatsSetInt32">
+            <summary>Sets the shim of TravelingDriverDTO.set_NumSeats(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.PlacesGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_Places()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.PlacesSetString">
+            <summary>Sets the shim of TravelingDriverDTO.set_Places(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.PriceGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_Price()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.PriceSetDouble">
+            <summary>Sets the shim of TravelingDriverDTO.set_Price(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.SourceGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_Source()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.SourceSetString">
+            <summary>Sets the shim of TravelingDriverDTO.set_Source(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.TimeGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_Time()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.TimeSetTimeSpan">
+            <summary>Sets the shim of TravelingDriverDTO.set_Time(TimeSpan value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.ToDateGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_ToDate()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.ToDateSetDateTime">
+            <summary>Sets the shim of TravelingDriverDTO.set_ToDate(DateTime value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.TravelingIdDriverGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_TravelingIdDriver()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.TravelingIdDriverSetInt32">
+            <summary>Sets the shim of TravelingDriverDTO.set_TravelingIdDriver(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.WeekdayGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_Weekday()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.AllInstances.WeekdaySetString">
+            <summary>Sets the shim of TravelingDriverDTO.set_Weekday(String value)</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimTravelingDriverDTO.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimTravelingDriverDTO.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.Constructor">
+            <summary>Sets the shim of TravelingDriverDTO.TravelingDriverDTO()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.DestinationGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_Destination()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.DestinationSetString">
+            <summary>Sets the shim of TravelingDriverDTO.set_Destination(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.DriverIdGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_DriverId()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.DriverIdSetInt32">
+            <summary>Sets the shim of TravelingDriverDTO.set_DriverId(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.FromDateGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_FromDate()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.FromDateSetDateTime">
+            <summary>Sets the shim of TravelingDriverDTO.set_FromDate(DateTime value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.IsActiveGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_IsActive()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.IsActiveSetBoolean">
+            <summary>Sets the shim of TravelingDriverDTO.set_IsActive(Boolean value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.LatDGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_LatD()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.LatDSetDouble">
+            <summary>Sets the shim of TravelingDriverDTO.set_LatD(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.LatSGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_LatS()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.LatSSetDouble">
+            <summary>Sets the shim of TravelingDriverDTO.set_LatS(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.LngDGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_LngD()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.LngDSetDouble">
+            <summary>Sets the shim of TravelingDriverDTO.set_LngD(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.LngSGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_LngS()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.LngSSetDouble">
+            <summary>Sets the shim of TravelingDriverDTO.set_LngS(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.NumSeatsGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_NumSeats()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.NumSeatsSetInt32">
+            <summary>Sets the shim of TravelingDriverDTO.set_NumSeats(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.PlacesGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_Places()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.PlacesSetString">
+            <summary>Sets the shim of TravelingDriverDTO.set_Places(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.PriceGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_Price()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.PriceSetDouble">
+            <summary>Sets the shim of TravelingDriverDTO.set_Price(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.SourceGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_Source()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.SourceSetString">
+            <summary>Sets the shim of TravelingDriverDTO.set_Source(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.TimeGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_Time()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.TimeSetTimeSpan">
+            <summary>Sets the shim of TravelingDriverDTO.set_Time(TimeSpan value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.ToDateGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_ToDate()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.ToDateSetDateTime">
+            <summary>Sets the shim of TravelingDriverDTO.set_ToDate(DateTime value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.TravelingIdDriverGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_TravelingIdDriver()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.TravelingIdDriverSetInt32">
+            <summary>Sets the shim of TravelingDriverDTO.set_TravelingIdDriver(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.WeekdayGet">
+            <summary>Sets the shim of TravelingDriverDTO.get_Weekday()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingDriverDTO.WeekdaySetString">
+            <summary>Sets the shim of TravelingDriverDTO.set_Weekday(String value)</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimTravelingPassengerDTO">
+            <summary>Shim type of DTO.TravelingPassengerDTO</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimTravelingPassengerDTO.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimTravelingPassengerDTO.#ctor(DTO.TravelingPassengerDTO)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.DestinationGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_Destination()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.DestinationSetString">
+            <summary>Sets the shim of TravelingPassengerDTO.set_Destination(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.FromDateGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_FromDate()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.FromDateSetDateTime">
+            <summary>Sets the shim of TravelingPassengerDTO.set_FromDate(DateTime value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.FromTimeGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_FromTime()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.FromTimeSetTimeSpan">
+            <summary>Sets the shim of TravelingPassengerDTO.set_FromTime(TimeSpan value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.IsActiveGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_IsActive()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.IsActiveSetBoolean">
+            <summary>Sets the shim of TravelingPassengerDTO.set_IsActive(Boolean value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.IsEmbeddedGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_IsEmbedded()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.IsEmbeddedSetBoolean">
+            <summary>Sets the shim of TravelingPassengerDTO.set_IsEmbedded(Boolean value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.LatDGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_LatD()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.LatDSetDouble">
+            <summary>Sets the shim of TravelingPassengerDTO.set_LatD(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.LatSGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_LatS()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.LatSSetDouble">
+            <summary>Sets the shim of TravelingPassengerDTO.set_LatS(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.LngDGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_LngD()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.LngDSetDouble">
+            <summary>Sets the shim of TravelingPassengerDTO.set_LngD(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.LngSGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_LngS()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.LngSSetDouble">
+            <summary>Sets the shim of TravelingPassengerDTO.set_LngS(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.PassengerIdGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_PassengerId()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.PassengerIdSetInt32">
+            <summary>Sets the shim of TravelingPassengerDTO.set_PassengerId(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.PlacesGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_Places()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.PlacesSetString">
+            <summary>Sets the shim of TravelingPassengerDTO.set_Places(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.PriceGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_Price()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.PriceSetDouble">
+            <summary>Sets the shim of TravelingPassengerDTO.set_Price(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.SourceGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_Source()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.SourceSetString">
+            <summary>Sets the shim of TravelingPassengerDTO.set_Source(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.ToDateGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_ToDate()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.ToDateSetDateTime">
+            <summary>Sets the shim of TravelingPassengerDTO.set_ToDate(DateTime value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.ToTimeGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_ToTime()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.ToTimeSetTimeSpan">
+            <summary>Sets the shim of TravelingPassengerDTO.set_ToTime(TimeSpan value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.TravelingIdPassengerGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_TravelingIdPassenger()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.TravelingIdPassengerSetInt32">
+            <summary>Sets the shim of TravelingPassengerDTO.set_TravelingIdPassenger(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.WeekdayGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_Weekday()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.AllInstances.WeekdaySetString">
+            <summary>Sets the shim of TravelingPassengerDTO.set_Weekday(String value)</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimTravelingPassengerDTO.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimTravelingPassengerDTO.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.Constructor">
+            <summary>Sets the shim of TravelingPassengerDTO.TravelingPassengerDTO()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.DestinationGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_Destination()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.DestinationSetString">
+            <summary>Sets the shim of TravelingPassengerDTO.set_Destination(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.FromDateGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_FromDate()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.FromDateSetDateTime">
+            <summary>Sets the shim of TravelingPassengerDTO.set_FromDate(DateTime value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.FromTimeGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_FromTime()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.FromTimeSetTimeSpan">
+            <summary>Sets the shim of TravelingPassengerDTO.set_FromTime(TimeSpan value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.IsActiveGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_IsActive()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.IsActiveSetBoolean">
+            <summary>Sets the shim of TravelingPassengerDTO.set_IsActive(Boolean value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.IsEmbeddedGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_IsEmbedded()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.IsEmbeddedSetBoolean">
+            <summary>Sets the shim of TravelingPassengerDTO.set_IsEmbedded(Boolean value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.LatDGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_LatD()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.LatDSetDouble">
+            <summary>Sets the shim of TravelingPassengerDTO.set_LatD(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.LatSGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_LatS()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.LatSSetDouble">
+            <summary>Sets the shim of TravelingPassengerDTO.set_LatS(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.LngDGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_LngD()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.LngDSetDouble">
+            <summary>Sets the shim of TravelingPassengerDTO.set_LngD(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.LngSGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_LngS()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.LngSSetDouble">
+            <summary>Sets the shim of TravelingPassengerDTO.set_LngS(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.PassengerIdGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_PassengerId()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.PassengerIdSetInt32">
+            <summary>Sets the shim of TravelingPassengerDTO.set_PassengerId(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.PlacesGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_Places()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.PlacesSetString">
+            <summary>Sets the shim of TravelingPassengerDTO.set_Places(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.PriceGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_Price()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.PriceSetDouble">
+            <summary>Sets the shim of TravelingPassengerDTO.set_Price(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.SourceGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_Source()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.SourceSetString">
+            <summary>Sets the shim of TravelingPassengerDTO.set_Source(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.ToDateGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_ToDate()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.ToDateSetDateTime">
+            <summary>Sets the shim of TravelingPassengerDTO.set_ToDate(DateTime value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.ToTimeGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_ToTime()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.ToTimeSetTimeSpan">
+            <summary>Sets the shim of TravelingPassengerDTO.set_ToTime(TimeSpan value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.TravelingIdPassengerGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_TravelingIdPassenger()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.TravelingIdPassengerSetInt32">
+            <summary>Sets the shim of TravelingPassengerDTO.set_TravelingIdPassenger(Int32 value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.WeekdayGet">
+            <summary>Sets the shim of TravelingPassengerDTO.get_Weekday()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimTravelingPassengerDTO.WeekdaySetString">
+            <summary>Sets the shim of TravelingPassengerDTO.set_Weekday(String value)</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimUserDTO">
+            <summary>Shim type of DTO.UserDTO</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimUserDTO.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimUserDTO.#ctor(DTO.UserDTO)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimUserDTO.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.AllInstances.CellphoneGet">
+            <summary>Sets the shim of UserDTO.get_Cellphone()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.AllInstances.CellphoneSetString">
+            <summary>Sets the shim of UserDTO.set_Cellphone(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.AllInstances.CreditCardNumberGet">
+            <summary>Sets the shim of UserDTO.get_CreditCardNumber()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.AllInstances.CreditCardNumberSetString">
+            <summary>Sets the shim of UserDTO.set_CreditCardNumber(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.AllInstances.CvvGet">
+            <summary>Sets the shim of UserDTO.get_Cvv()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.AllInstances.CvvSetString">
+            <summary>Sets the shim of UserDTO.set_Cvv(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.AllInstances.GenderGet">
+            <summary>Sets the shim of UserDTO.get_Gender()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.AllInstances.GenderSetBoolean">
+            <summary>Sets the shim of UserDTO.set_Gender(Boolean value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.AllInstances.IdCardOwnerGet">
+            <summary>Sets the shim of UserDTO.get_IdCardOwner()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.AllInstances.IdCardOwnerSetString">
+            <summary>Sets the shim of UserDTO.set_IdCardOwner(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.AllInstances.IdentityGet">
+            <summary>Sets the shim of UserDTO.get_Identity()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.AllInstances.IdentitySetString">
+            <summary>Sets the shim of UserDTO.set_Identity(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.AllInstances.MailGet">
+            <summary>Sets the shim of UserDTO.get_Mail()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.AllInstances.MailSetString">
+            <summary>Sets the shim of UserDTO.set_Mail(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.AllInstances.NameGet">
+            <summary>Sets the shim of UserDTO.get_Name()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.AllInstances.NameSetString">
+            <summary>Sets the shim of UserDTO.set_Name(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.AllInstances.ValidityGet">
+            <summary>Sets the shim of UserDTO.get_Validity()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.AllInstances.ValiditySetDateTime">
+            <summary>Sets the shim of UserDTO.set_Validity(DateTime value)</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimUserDTO.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimUserDTO.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.CellphoneGet">
+            <summary>Sets the shim of UserDTO.get_Cellphone()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.CellphoneSetString">
+            <summary>Sets the shim of UserDTO.set_Cellphone(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.Constructor">
+            <summary>Sets the shim of UserDTO.UserDTO()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.CreditCardNumberGet">
+            <summary>Sets the shim of UserDTO.get_CreditCardNumber()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.CreditCardNumberSetString">
+            <summary>Sets the shim of UserDTO.set_CreditCardNumber(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.CvvGet">
+            <summary>Sets the shim of UserDTO.get_Cvv()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.CvvSetString">
+            <summary>Sets the shim of UserDTO.set_Cvv(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.GenderGet">
+            <summary>Sets the shim of UserDTO.get_Gender()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.GenderSetBoolean">
+            <summary>Sets the shim of UserDTO.set_Gender(Boolean value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.IdCardOwnerGet">
+            <summary>Sets the shim of UserDTO.get_IdCardOwner()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.IdCardOwnerSetString">
+            <summary>Sets the shim of UserDTO.set_IdCardOwner(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.IdentityGet">
+            <summary>Sets the shim of UserDTO.get_Identity()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.IdentitySetString">
+            <summary>Sets the shim of UserDTO.set_Identity(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.MailGet">
+            <summary>Sets the shim of UserDTO.get_Mail()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.MailSetString">
+            <summary>Sets the shim of UserDTO.set_Mail(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.NameGet">
+            <summary>Sets the shim of UserDTO.get_Name()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.NameSetString">
+            <summary>Sets the shim of UserDTO.set_Name(String value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.ValidityGet">
+            <summary>Sets the shim of UserDTO.get_Validity()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimUserDTO.ValiditySetDateTime">
+            <summary>Sets the shim of UserDTO.set_Validity(DateTime value)</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimWay">
+            <summary>Shim type of DTO.Way</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimWay.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimWay.#ctor(DTO.Way)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimWay.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWay.AllInstances.DestinaionGet">
+            <summary>Sets the shim of Way.get_Destinaion()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWay.AllInstances.DestinaionSetDouble">
+            <summary>Sets the shim of Way.set_Destinaion(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWay.AllInstances.SourceGet">
+            <summary>Sets the shim of Way.get_Source()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWay.AllInstances.SourceSetDouble">
+            <summary>Sets the shim of Way.set_Source(Double value)</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimWay.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimWay.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWay.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWay.Constructor">
+            <summary>Sets the shim of Way.Way()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWay.DestinaionGet">
+            <summary>Sets the shim of Way.get_Destinaion()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWay.DestinaionSetDouble">
+            <summary>Sets the shim of Way.set_Destinaion(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWay.SourceGet">
+            <summary>Sets the shim of Way.get_Source()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWay.SourceSetDouble">
+            <summary>Sets the shim of Way.set_Source(Double value)</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimWayPoint">
+            <summary>Shim type of DTO.WayPoint</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimWayPoint.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimWayPoint.#ctor(DTO.WayPoint)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:DTO.Fakes.ShimWayPoint.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWayPoint.AllInstances.LatDestinationGet">
+            <summary>Sets the shim of WayPoint.get_LatDestination()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWayPoint.AllInstances.LatDestinationSetDouble">
+            <summary>Sets the shim of WayPoint.set_LatDestination(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWayPoint.AllInstances.LatSourceGet">
+            <summary>Sets the shim of WayPoint.get_LatSource()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWayPoint.AllInstances.LatSourceSetDouble">
+            <summary>Sets the shim of WayPoint.set_LatSource(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWayPoint.AllInstances.ListPointGet">
+            <summary>Sets the shim of WayPoint.get_ListPoint()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWayPoint.AllInstances.ListPointSetPointArray">
+            <summary>Sets the shim of WayPoint.set_ListPoint(Point[] value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWayPoint.AllInstances.LngDestinationGet">
+            <summary>Sets the shim of WayPoint.get_LngDestination()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWayPoint.AllInstances.LngDestinationSetDouble">
+            <summary>Sets the shim of WayPoint.set_LngDestination(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWayPoint.AllInstances.LngSourceGet">
+            <summary>Sets the shim of WayPoint.get_LngSource()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWayPoint.AllInstances.LngSourceSetDouble">
+            <summary>Sets the shim of WayPoint.set_LngSource(Double value)</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimWayPoint.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:DTO.Fakes.ShimWayPoint.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWayPoint.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWayPoint.Constructor">
+            <summary>Sets the shim of WayPoint.WayPoint()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWayPoint.LatDestinationGet">
+            <summary>Sets the shim of WayPoint.get_LatDestination()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWayPoint.LatDestinationSetDouble">
+            <summary>Sets the shim of WayPoint.set_LatDestination(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWayPoint.LatSourceGet">
+            <summary>Sets the shim of WayPoint.get_LatSource()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWayPoint.LatSourceSetDouble">
+            <summary>Sets the shim of WayPoint.set_LatSource(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWayPoint.ListPointGet">
+            <summary>Sets the shim of WayPoint.get_ListPoint()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWayPoint.ListPointSetPointArray">
+            <summary>Sets the shim of WayPoint.set_ListPoint(Point[] value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWayPoint.LngDestinationGet">
+            <summary>Sets the shim of WayPoint.get_LngDestination()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWayPoint.LngDestinationSetDouble">
+            <summary>Sets the shim of WayPoint.set_LngDestination(Double value)</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWayPoint.LngSourceGet">
+            <summary>Sets the shim of WayPoint.get_LngSource()</summary>
+        </member>
+        <member name="P:DTO.Fakes.ShimWayPoint.LngSourceSetDouble">
+            <summary>Sets the shim of WayPoint.set_LngSource(Double value)</summary>
+        </member>
+        <member name="T:DTO.Fakes.StubAddressDTO">
+            <summary>Stub type of DTO.AddressDTO</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubAddressDTO.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubAddressDTO.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubAddressDTO.InitializeStub">
+            <summary>Initializes a new instance of type StubAddressDTO</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubAddressDTO.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubAddressDTO.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DTO.Fakes.StubDriverDTO">
+            <summary>Stub type of DTO.DriverDTO</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubDriverDTO.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubDriverDTO.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubDriverDTO.InitializeStub">
+            <summary>Initializes a new instance of type StubDriverDTO</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubDriverDTO.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubDriverDTO.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DTO.Fakes.StubJoinTraveling">
+            <summary>Stub type of DTO.JoinTraveling</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubJoinTraveling.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubJoinTraveling.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubJoinTraveling.InitializeStub">
+            <summary>Initializes a new instance of type StubJoinTraveling</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubJoinTraveling.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubJoinTraveling.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DTO.Fakes.StubPassngerDTO">
+            <summary>Stub type of DTO.PassngerDTO</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubPassngerDTO.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubPassngerDTO.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubPassngerDTO.InitializeStub">
+            <summary>Initializes a new instance of type StubPassngerDTO</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubPassngerDTO.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubPassngerDTO.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DTO.Fakes.StubPaymentDTO">
+            <summary>Stub type of DTO.PaymentDTO</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubPaymentDTO.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubPaymentDTO.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubPaymentDTO.InitializeStub">
+            <summary>Initializes a new instance of type StubPaymentDTO</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubPaymentDTO.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubPaymentDTO.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DTO.Fakes.StubPoint">
+            <summary>Stub type of DTO.Point</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubPoint.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubPoint.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubPoint.InitializeStub">
+            <summary>Initializes a new instance of type StubPoint</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubPoint.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubPoint.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DTO.Fakes.StubRegisterationDTO">
+            <summary>Stub type of DTO.RegisterationDTO</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubRegisterationDTO.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubRegisterationDTO.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubRegisterationDTO.InitializeStub">
+            <summary>Initializes a new instance of type StubRegisterationDTO</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubRegisterationDTO.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubRegisterationDTO.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DTO.Fakes.StubRegistrationDateRangeDTO">
+            <summary>Stub type of DTO.RegistrationDateRangeDTO</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubRegistrationDateRangeDTO.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubRegistrationDateRangeDTO.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubRegistrationDateRangeDTO.InitializeStub">
+            <summary>Initializes a new instance of type StubRegistrationDateRangeDTO</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubRegistrationDateRangeDTO.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubRegistrationDateRangeDTO.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DTO.Fakes.StubRoute">
+            <summary>Stub type of DTO.Route</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubRoute.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubRoute.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubRoute.InitializeStub">
+            <summary>Initializes a new instance of type StubRoute</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubRoute.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubRoute.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DTO.Fakes.StubStation">
+            <summary>Stub type of DTO.Station</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubStation.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubStation.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubStation.InitializeStub">
+            <summary>Initializes a new instance of type StubStation</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubStation.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubStation.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DTO.Fakes.StubTravelDriverRangeDTO">
+            <summary>Stub type of DTO.TravelDriverRangeDTO</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubTravelDriverRangeDTO.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubTravelDriverRangeDTO.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubTravelDriverRangeDTO.InitializeStub">
+            <summary>Initializes a new instance of type StubTravelDriverRangeDTO</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubTravelDriverRangeDTO.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubTravelDriverRangeDTO.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DTO.Fakes.StubTravelPassengerRangeDTO">
+            <summary>Stub type of DTO.TravelPassengerRangeDTO</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubTravelPassengerRangeDTO.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubTravelPassengerRangeDTO.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubTravelPassengerRangeDTO.InitializeStub">
+            <summary>Initializes a new instance of type StubTravelPassengerRangeDTO</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubTravelPassengerRangeDTO.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubTravelPassengerRangeDTO.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DTO.Fakes.StubTravelReportingDTO">
+            <summary>Stub type of DTO.TravelReportingDTO</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubTravelReportingDTO.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubTravelReportingDTO.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubTravelReportingDTO.InitializeStub">
+            <summary>Initializes a new instance of type StubTravelReportingDTO</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubTravelReportingDTO.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubTravelReportingDTO.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DTO.Fakes.StubTravelingDriverDTO">
+            <summary>Stub type of DTO.TravelingDriverDTO</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubTravelingDriverDTO.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubTravelingDriverDTO.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubTravelingDriverDTO.InitializeStub">
+            <summary>Initializes a new instance of type StubTravelingDriverDTO</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubTravelingDriverDTO.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubTravelingDriverDTO.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DTO.Fakes.StubTravelingPassengerDTO">
+            <summary>Stub type of DTO.TravelingPassengerDTO</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubTravelingPassengerDTO.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubTravelingPassengerDTO.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubTravelingPassengerDTO.InitializeStub">
+            <summary>Initializes a new instance of type StubTravelingPassengerDTO</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubTravelingPassengerDTO.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubTravelingPassengerDTO.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DTO.Fakes.StubUserDTO">
+            <summary>Stub type of DTO.UserDTO</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubUserDTO.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubUserDTO.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubUserDTO.InitializeStub">
+            <summary>Initializes a new instance of type StubUserDTO</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubUserDTO.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubUserDTO.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DTO.Fakes.StubWay">
+            <summary>Stub type of DTO.Way</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubWay.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubWay.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubWay.InitializeStub">
+            <summary>Initializes a new instance of type StubWay</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubWay.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubWay.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:DTO.Fakes.StubWayPoint">
+            <summary>Stub type of DTO.WayPoint</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubWayPoint.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubWayPoint.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:DTO.Fakes.StubWayPoint.InitializeStub">
+            <summary>Initializes a new instance of type StubWayPoint</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubWayPoint.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:DTO.Fakes.StubWayPoint.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

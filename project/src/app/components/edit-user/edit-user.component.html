@@ -1,0 +1,36 @@
+<ng4-loading-spinner> </ng4-loading-spinner>
+
+<div class="section">
+    <h2>עדכון פרטים אישיים</h2>
+    <div class="img"><img src="../../../assets/images/car.png" /></div>
+    <form class="login-form">
+        <mat-form-field class="field">
+            <mat-label>שם מלא</mat-label>
+            <input matInput type="text" placeholder="שם מלא" [(ngModel)]="user.Name" required name="name">
+            <mat-error>.שדה חובה</mat-error>
+        </mat-form-field>
+        <br>
+        <mat-form-field class="field">
+            <mat-label>טל/פלאפון</mat-label>
+            <input matInput type="tel" placeholder="טל/פלאפון" pattern="[0-9]*" maxlength="10" minlength="9"
+                [(ngModel)]="user.Cellphone" required name="tel">
+            <mat-error>.שדה חובה</mat-error>
+        </mat-form-field>
+        <br>
+        <mat-form-field class="field" class="example-full-width">
+            <mat-label>מייל</mat-label>
+            <input matInput [formControl]="emailFormControl" [(ngModel)]="user.Mail" [errorStateMatcher]="matcher"
+                placeholder="Ex.123@gmail.com" name="mail" value="ester85056@gmail.com">
+
+            <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                .הכנס בבקשה כתובת מייל חוקית
+            </mat-error>
+            <mat-error *ngIf="emailFormControl.hasError('required')">
+                <strong>.שדה חובה</strong>
+            </mat-error>
+        </mat-form-field>
+        <div class="tabs">
+            <button class="btn" (click)="editUser()">שמור</button>
+        </div>
+    </form>
+</div>

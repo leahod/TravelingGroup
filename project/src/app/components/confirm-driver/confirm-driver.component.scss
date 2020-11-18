@@ -1,0 +1,13 @@
+body{
+    height: 100vh;
+    background-image:url("../../../assets/images/road.jpg") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media(max-width:425px) {  
+    .swal-overlay {
+        margin-top: -52%;
+    }
+}

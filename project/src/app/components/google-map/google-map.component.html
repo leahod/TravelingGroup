@@ -1,0 +1,25 @@
+
+<div id="dd">
+        <!-- [waypoint] -->
+<!-- <agm-map appDirectionsMap [showDirection]="this.displayDirections"
+         [origin]="origin"
+         [destination]="destination"
+        [waypoint] ="waypoint"
+         [zoom]="zoom"
+         [disableDefaultUI]="false"
+         [zoomControl]="false">
+
+    <agm-marker
+            [latitude]="origin.latitude"
+            [longitude]="origin.longitude">
+    </agm-marker>
+  
+    
+</agm-map> -->
+<agm-map [latitude]="latitude" [longitude]="longitude">
+        <agm-direction [origin]="origin" [destination]="destination" [waypoints]="waypoints"></agm-direction>
+      </agm-map>
+
+      
+</div>
+ 

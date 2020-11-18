@@ -1,0 +1,17 @@
+<div class="section">
+  <div class="line"></div>
+  <h2> תשלומים </h2>
+  <div class="line"></div>
+  <div *ngFor="let p of payments">
+    <mat-card  class="row">
+      <div id="text" class="row">
+        <p class="row"> <span> קוד תשלום : </span> {{p.Id}} </p>
+        <p class="row"> <span> קוד הרשמה : </span> {{p.IdRegisteration}} </p>
+        <p class="row"> <span> סכום לתשלום : </span> ₪{{p.SumPay}}</p>
+        <p class="row"> <span> תאריך תשלום : </span> {{p.PaymentDate | date: 'dd/MM/yyyy'}}</p>
+        <p class="row"> <span> סיבת תשלום: </span>  {{getResson(p.IdPaymentKind) }}</p>
+      </div>
+    </mat-card>
+  </div>
+  <div class="img"><img src="../../../assets/images/car.png" /></div>
+</div>

@@ -1,0 +1,19 @@
+<div class="section">
+  <div class="line"></div>
+  <h2>פרטי נסיעה</h2>
+  <div class="line"></div>
+  <mat-card class="row">
+    <div class="col">
+      <div class="row" id="text">
+        <p class="row"> <span> מוצא : </span> {{traveling.Source}} </p>
+        <p class="row"> <span> יעד : </span> {{traveling.Destination}} </p>
+        <p class="row"><span> מתאריך : </span>{{traveling.FromDate | date: 'dd/MM/yyyy'}}</p>
+        <p class="row"><span> עד תאריך : </span>{{traveling.ToDate | date: 'dd/MM/yyyy'}}</p>
+        <p class="row"> <span> ימים בשבוע : </span> {{getDays(traveling.Weekday)  }}</p>
+      </div>
+    </div>
+    <div class="col-4" id="col">
+      <div class="img"><img src="../../../assets/images/car.png" /></div>
+    </div>
+  </mat-card>
+</div>

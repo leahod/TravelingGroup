@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Travel_In_GroupDBModelStoreContainer" CdmEntityContainer="Travel_In_GroupDBEntities">
+    <EntitySetMapping Name="Payments">
+      <EntityTypeMapping TypeName="Travel_In_GroupDBModel.Payment">
+        <MappingFragment StoreEntitySet="Payment">
+          <ScalarProperty Name="SumPay" ColumnName="SumPay" />
+          <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+          <ScalarProperty Name="IdPaymentKind" ColumnName="IdPaymentKind" />
+          <ScalarProperty Name="IdRegisteration" ColumnName="IdRegisteration" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentKinds">
+      <EntityTypeMapping TypeName="Travel_In_GroupDBModel.PaymentKind">
+        <MappingFragment StoreEntitySet="PaymentKind">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TravelReportings">
+      <EntityTypeMapping TypeName="Travel_In_GroupDBModel.TravelReporting">
+        <MappingFragment StoreEntitySet="TravelReporting">
+          <ScalarProperty Name="IsPay" ColumnName="IsPay" />
+          <ScalarProperty Name="NumComplainants" ColumnName="NumComplainants" />
+          <ScalarProperty Name="NumPassengers" ColumnName="NumPassengers" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="IdTravelingDriver" ColumnName="IdTravelingDriver" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Registerations">
+      <EntityTypeMapping TypeName="Travel_In_GroupDBModel.Registeration">
+        <MappingFragment StoreEntitySet="Registeration">
+          <ScalarProperty Name="TravelingIdPassenger" ColumnName="TravelingIdPassenger" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="TravelingIdDriver" ColumnName="TravelingIdDriver" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RegistrationDateRanges">
+      <EntityTypeMapping TypeName="Travel_In_GroupDBModel.RegistrationDateRange">
+        <MappingFragment StoreEntitySet="RegistrationDateRange">
+          <ScalarProperty Name="IsComplain" ColumnName="IsComplain" />
+          <ScalarProperty Name="NumComplainants" ColumnName="NumComplainants" />
+          <ScalarProperty Name="NumPassengers" ColumnName="NumPassengers" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="DateInRange" ColumnName="DateInRange" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TravelDriverRanges">
+      <EntityTypeMapping TypeName="Travel_In_GroupDBModel.TravelDriverRange">
+        <MappingFragment StoreEntitySet="TravelDriverRange">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="NumSeatsAvailable" ColumnName="NumSeatsAvailable" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Identity" ColumnName="Identity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Drivers">
+      <EntityTypeMapping TypeName="Travel_In_GroupDBModel.Driver">
+        <MappingFragment StoreEntitySet="Driver">
+          <ScalarProperty Name="CarDescription" ColumnName="CarDescription" />
+          <ScalarProperty Name="NumberOfSeats" ColumnName="NumberOfSeats" />
+          <ScalarProperty Name="Identity" ColumnName="Identity" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Passengers">
+      <EntityTypeMapping TypeName="Travel_In_GroupDBModel.Passenger">
+        <MappingFragment StoreEntitySet="Passenger">
+          <ScalarProperty Name="Identity" ColumnName="Identity" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TravelingDrivers">
+      <EntityTypeMapping TypeName="Travel_In_GroupDBModel.TravelingDriver">
+        <MappingFragment StoreEntitySet="TravelingDriver">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="NumSeats" ColumnName="NumSeats" />
+          <ScalarProperty Name="LngD" ColumnName="LngD" />
+          <ScalarProperty Name="LatD" ColumnName="LatD" />
+          <ScalarProperty Name="LngS" ColumnName="LngS" />
+          <ScalarProperty Name="LatS" ColumnName="LatS" />
+          <ScalarProperty Name="Destination" ColumnName="Destination" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="Places" ColumnName="Places" />
+          <ScalarProperty Name="Weekday" ColumnName="Weekday" />
+          <ScalarProperty Name="DriverId" ColumnName="DriverId" />
+          <ScalarProperty Name="TravelingIdDriver" ColumnName="TravelingIdDriver" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TravelingPassengers">
+      <EntityTypeMapping TypeName="Travel_In_GroupDBModel.TravelingPassenger">
+        <MappingFragment StoreEntitySet="TravelingPassenger">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsEmbedded" ColumnName="IsEmbedded" />
+          <ScalarProperty Name="ToTime" ColumnName="ToTime" />
+          <ScalarProperty Name="LngD" ColumnName="LngD" />
+          <ScalarProperty Name="LatD" ColumnName="LatD" />
+          <ScalarProperty Name="LngS" ColumnName="LngS" />
+          <ScalarProperty Name="LatS" ColumnName="LatS" />
+          <ScalarProperty Name="Destination" ColumnName="Destination" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="FromTime" ColumnName="FromTime" />
+          <ScalarProperty Name="Places" ColumnName="Places" />
+          <ScalarProperty Name="Weekday" ColumnName="Weekday" />
+          <ScalarProperty Name="PassengerId" ColumnName="PassengerId" />
+          <ScalarProperty Name="TravelingIdPassenger" ColumnName="TravelingIdPassenger" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TravelPassengerRanges">
+      <EntityTypeMapping TypeName="Travel_In_GroupDBModel.TravelPassengerRange">
+        <MappingFragment StoreEntitySet="TravelPassengerRange">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="Travel_In_GroupDBModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="IdCardOwner" ColumnName="IdCardOwner" />
+          <ScalarProperty Name="Cvv" ColumnName="Cvv" />
+          <ScalarProperty Name="Validity" ColumnName="Validity" />
+          <ScalarProperty Name="CreditCardNumber" ColumnName="CreditCardNumber" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Cellphone" ColumnName="Cellphone" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Identity" ColumnName="Identity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

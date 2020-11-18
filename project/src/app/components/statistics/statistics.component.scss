@@ -1,0 +1,48 @@
+.btnGlass
+{
+	border-color: rgba(44, 30, 95, 0.3);
+	border-width: 4px;
+}
+.mat-tab-group {
+	margin-bottom: 48px;
+	// text-align: center;
+	align-items: center;
+}
+p {
+    font-family: Lato;
+    text-align: center;
+	color:  rgb(0,39,58);
+	font-size: 120%;
+  }
+  @media   (max-width:425px) {  
+	h2{
+  
+		margin-top: 8%;
+	}
+	.statistic{margin-top: 12%;
+	}
+  }
+h2{
+ 
+    text-align: center;
+	color: #bb3209;
+ 
+}
+ 
+  @media(min-width: 750px) {
+	.statistic{
+		width: 55%;
+		 margin-left: 20%;
+	}
+ 
+	  }
+.numPassengers{
+	border: 4px dotted #661005;
+	width: 10%;
+	text-align: center;
+	 margin-left: 45%;
+}
+.mat-tab-group {
+    display: list-item;
+    flex-direction: column;
+}

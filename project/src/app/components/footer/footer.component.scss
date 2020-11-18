@@ -1,0 +1,37 @@
+.nav {
+    position: fixed;
+    height: 10vh;
+    width: 100%;
+    background:#bb3209;
+    bottom: 0px;
+      
+    ul {
+        display: inline-flex;
+        list-style: none;
+        width: 100%;
+        padding: 0;
+
+        li{
+            margin-inline-start: 30px;
+        }
+        a {
+            text-align: center;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        a:hover,a:active {
+          color: #434244;
+          text-decoration: none;
+        }
+      }
+  }
+
+  .material-icons{
+      padding-bottom: 10px;
+      height: 5vh;
+      width: 100%;
+      margin-left: -2%;
+  }

@@ -1,0 +1,16 @@
+<div class="section">
+  <h1>עדכון פרטי הרכב</h1>
+  <div class="img"><img src="../../../assets/images/car.png" /></div>
+  <form class="login-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>מספר מקומות ישיבה</mat-label>
+      <input type="number" matInput placeholder="0" [(ngModel)]="driver.NumberOfSeats" name="numberOfSeats">
+    </mat-form-field><br><br>
+    <mat-form-field class="example-full-width">
+      <mat-label>תאור הרכב</mat-label>
+      <input type="text" matInput [(ngModel)]="driver.CarDescription" name="carDescription">
+    </mat-form-field><br><br>
+    <div class="tabs">
+      <button class="btn" (click)="editDriver()">שמור</button></div>
+  </form>
+</div>

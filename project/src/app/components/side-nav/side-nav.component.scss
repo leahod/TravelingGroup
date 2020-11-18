@@ -1,0 +1,75 @@
+
+
+.example-container {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+ mat-drawer-content   {
+  position: relative;
+  z-index: 1;
+  display: block;
+  height: 107%;
+  overflow: auto;
+}
+.example-sidenav-content {
+  align-items: left;
+  justify-content: left;
+
+  .example-icon{
+    position: absolute;
+    z-index: 1000;
+    padding-left: 5%;
+  }
+
+  .close{
+
+    i{
+      color: rgb(0,39,58);
+    }
+  }
+}
+  
+.example-sidenav {
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: rgb(13, 33, 71);
+
+  .header{
+    margin-bottom: 20%;
+    color: rgb(170, 75, 41);
+  }
+  p{
+    color: rosybrown;
+    .icons{
+      color: rosybrown;
+      margin-left: 8%;
+      margin-top: 8%;;
+    }
+  }
+
+  div{
+    border-radius: 12%;
+    height: 15vh;
+    align-items: center;
+  }
+
+  div:hover{ 
+    background-color: rgb(33, 54, 75);
+    p,.icons{
+      color: rgb(170, 75, 41);
+    }
+  }
+}
+
+app-change-user-login{
+  position: absolute;
+  z-index: 1000;
+}
+
+app-footer{
+  position: static;
+  z-index: 1001;
+}
+

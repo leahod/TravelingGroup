@@ -1,0 +1,85 @@
+
+<ng4-loading-spinner> </ng4-loading-spinner>
+<div class="section">
+  <h1>נסיעה חדשה</h1>
+  <div class="img"><img src="../../../assets/images/car.png" /></div>
+
+  <div class="slider">
+    <div class="slide active">
+      <form class="login-form">
+
+        <mat-form-field>
+          <mat-label>תאריך התחלה</mat-label>
+          <input matInput [matDatepicker]="picker" [(ngModel)]="traveling.FromDate" name="fromDate">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker startView="year" [startAt]="startDate"></mat-datepicker>
+        </mat-form-field><br>
+
+        <mat-form-field>
+          <mat-label>תאריך סיום</mat-label>
+          <input matInput [matDatepicker]="picker1" [(ngModel)]="traveling.ToDate" name="toDate">
+          <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+          <mat-datepicker #picker1 startView="year" [startAt]="endDate"></mat-datepicker>
+        </mat-form-field><br><br>
+         מ - <input id="appt-time1" [(ngModel)]="traveling.FromTime" type="time" name="appt-time"> עד
+        <input id="appt-time2" [(ngModel)]="traveling.ToTime" type="time" name="appt-time">
+        <br> <br> 
+      
+      </form>
+    </div>
+    
+
+    <div class="slide ">
+
+      <mat-tree class="mat-tree" [dataSource]="dataSource" [treeControl]="treeControl">
+        <mat-tree-node class="mat-tree-node" *matTreeNodeDef="let node" matTreeNodeToggle matTreeNodePadding>
+          <button class="btnIcon" mat-icon-button disabled></button>
+          <mat-checkbox class="checklist-leaf-node" [checked]="checklistSelection.isSelected(node)"
+            (change)="todoLeafItemSelectionToggle(node)">{{node.item}}</mat-checkbox>
+        </mat-tree-node>
+        <mat-tree-node class="mat-tree-node" *matTreeNodeDef="let node; when: hasChild" matTreeNodePadding>
+          <button mat-icon-button matTreeNodeToggle [attr.aria-label]="'toggle ' + node.filename">
+            <mat-icon class="mat-icon-rtl-mirror">
+              {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+            </mat-icon>
+          </button>
+          <mat-checkbox [checked]="descendantsAllSelected(node)" [indeterminate]="descendantsPartiallySelected(node)"
+            (change)="todoItemSelectionToggle(node)">{{node.item}}</mat-checkbox>
+        </mat-tree-node>
+      </mat-tree>
+
+
+    </div>
+
+    <div class="slide">
+      <form class="login-form">
+        <br> 
+        <input ngx-google-places-autocomplete #placesRef="ngx-places" (onAddressChange)="handleSourceChange($event)"
+          [(ngModel)]="traveling.Source" [ngModelOptions]="{standalone: true}" placeholder="מ...‏"><br><br> 
+        <input ngx-google-places-autocomplete #placesRef="ngx-places"
+          (onAddressChange)="handleDestinationChange($event)" [(ngModel)]="traveling.Destination"
+          [ngModelOptions]="{standalone: true}" placeholder="...אל"><br><br>
+          <mat-form-field class="field">
+            <input matInput placeholder="עד מחיר" name="price" [(ngModel)]="traveling.Price" type="number"
+              class="example-right-align">
+          </mat-form-field>  
+      
+      </form>
+    </div>
+    
+    <div class="slide">
+      <form class="main-content">
+        <div class="item button-hand" (click)="saveTraveling()" style="--bg-color: #3498db">
+          <button class="btnOk">אשר נסיעה
+            <div class="hands"></div>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="btnPanel">
+    <button class="btn" id="previous"><i class="material-icons"> skip_previous</i></button>
+    <button class="btn" id="next"><i class="material-icons"> skip_next</i></button>
+  <!-- </div> -->
+</div>
